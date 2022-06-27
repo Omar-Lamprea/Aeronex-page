@@ -37,8 +37,18 @@ header nav{
         width: 100%;
         justify-content: flex-end;
         a{
-            color: rgb(208 44 44) !important;
+            // color: rgb(208 44 44) !important;
         }
+        .btn-ship, select{
+            background-color: #1E419B;
+            color: #fff !important;
+            font-weight: 600;
+            border: none;
+        }
+        .btn-ship:hover{
+            background-color: #183785;
+        }
+        
     }
 }
 
@@ -137,10 +147,12 @@ section{
         padding: 2rem;
         border-radius: 50%;
         height: 168.31px;
+        width: 168.31px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 4px 4px 8px 0px grey;
 
         p{
             margin: 0;
@@ -176,6 +188,15 @@ section{
       .contact-title{
         color: var(--second-color);
         font-weight: bold;
+      }
+      .city-data{
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        i{
+            color: #1E419B;
+        }
       }
     }
     .contact-form{
@@ -215,7 +236,9 @@ section{
           height: inherit;
         }
         input[type=submit]{
-          background-color: var(--main-color);
+          background-color: #1E419B;
+          color: #fff;
+          font-weight: 600;
         }
       }
     }
@@ -237,6 +260,10 @@ footer{
             background-color: #fff;
             margin: 1rem;
             border-radius: 2px;
+            font-weight: 600;
+        }
+        .userImg{
+            position:absolute
         }
     }
 
@@ -249,5 +276,29 @@ footer{
             border-bottom: 1px solid #1E419B;
             width: fit-content;
         }
+        i{
+            color: #1E419B;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .hero{
+        margin-top: 5rem;
+    }
+    footer{
+        .border-blue{
+            flex-direction: column-reverse;
+            .userImg{
+                position:inherit;
+                display: contents;
+            }
+        }
+    }
+  }
