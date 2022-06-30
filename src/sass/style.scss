@@ -56,6 +56,8 @@ section{
     .hero{
         img{
             width: 100%;
+            height: 80vh;
+            object-fit: cover;
         }
     }
 }
@@ -103,6 +105,17 @@ section{
             font-weight: 700;
             font-size: 10px;
         }
+        // p{
+        //     // width: 60%;
+        // }
+    }
+}
+
+.card-about{
+    .container-home-text{
+        p{
+            width: 60%;
+        }
     }
 }
 
@@ -116,7 +129,7 @@ section{
         padding-left: 0rem;
     }
     .container-card-service{
-        max-width: 200px;
+        max-width: 250px;
         text-align: center;
         p{
             text-align: start;
@@ -180,7 +193,6 @@ section{
         }
     }
 }
-
 
 .contactUs{
     .contact-info{
@@ -292,6 +304,23 @@ footer{
     .hero{
         margin-top: 5rem;
     }
+
+    .cards-news, .container-services-cards{
+        .card{
+            width: 100% !important;
+        }
+    }
+
+    .container-card-home{
+        .container-home-text{
+            border: none;
+            padding: 0 1rem;
+            p{
+                width: 100%;
+            }
+        }
+    }
+
     footer{
         .border-blue{
             flex-direction: column-reverse;
