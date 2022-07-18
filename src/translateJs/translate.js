@@ -63,8 +63,9 @@ async function initTranslate(){
   datas.forEach(item => {
     if(item.hasAttribute('placeholder')){
       item.setAttribute('placeholder', `${i18next.t(item.dataset.translate)}`)
+    }else{
+      item.innerHTML = i18next.t(item.dataset.translate)
     }
-    item.innerHTML = i18next.t(item.dataset.translate)
   })
 }
 
