@@ -25,23 +25,25 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item mx-3"> <a class="nav-link text-center active" aria-current="page" href="./">Home</a>
+                            <li class="nav-item mx-3"> <a data-translate="header-home" class="nav-link text-center active" aria-current="page"
+                                href="./">Home</a>
 
                             </li>
-                            <li class="nav-item mx-3"> <a class="nav-link text-center" href="./OurCompany.html">Our Company</a>
+                            <li class="nav-item mx-3"> <a data-translate="header-our-company" class="nav-link text-center" href="./OurCompany.html">Our Company</a>
 
                             </li>
-                            <li class="nav-item mx-3"> <a class="nav-link text-center" href="./OurServices.html">Our Services</a>
+                            <li class="nav-item mx-3"> <a data-translate="header-our-services" class="nav-link text-center" href="./OurServices.html">Our Services</a>
 
                             </li>
-                            <li class="nav-item mx-3"> <a class="nav-link text-center" href="./ContactUs.html">Contact Us</a>
+                            <li class="nav-item mx-3"> <a data-translate="header-contact-us" class="nav-link text-center" href="./ContactUs.html">Contact Us</a>
 
                             </li>
-                            <li class="nav-item mx-3"> <a class="nav-link text-center btn-ship" href="./Ship.html">SHIP WITH US</a>
+                            <li class="nav-item mx-3"> <a data-translate="header-ship-us" class="nav-link text-center btn-ship"
+                                href="./Ship.html">SHIP WITH US</a>
 
                             </li>
                             <li class="nav-item mx-3 d-flex justify-content-center align-items-center">
-                                <select name="lagnuaje" id="lagnuaje">
+                                <select name="lagnuaje" id="language">
                                     <option value="En">En</option>
                                     <option value="Es">Es</option>
                                 </select>
@@ -58,29 +60,33 @@
                 </div>
             </section>
         </div>
-        <div class="container px-lg-5 text-center my-5 py-5" style="max-width: 800px;">
-             <h3 class="title-double-color mb-5">OUR <span>COMPANY</span></h3>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, exercitationem,
-                iste tempora doloremque alias tempore voluptates doloribus consectetur
-                at laboriosam ratione, ipsum blanditiis dolorum! Modi odit nobis eum incidunt
-                cupiditate rem? Molestias mollitia culpa, magni nobis aliquam nemo quis
-                voluptate quisquam. Nam soluta totam iste natus placeat velit reprehenderit
-                officiis?</p>
+        <div class="container px-lg-5 text-center mt-5 pt-5" style="max-width: 800px;"> <span class="title-double-color mb-5 d-flex justify-content-center align-items-center">
+    <h3 data-translate="our-a">OUR</h3>
+    <span data-translate="company">COMPANY</span>
+</span>
+            <p data-translate="data-our-company-p1"></p>
             <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aliquid
-                amet qui eaque corporis ipsum nemo eos, eum beatae necessitatibus nesciunt
-                quis laudantium placeat error nostrum ex molestias impedit consectetur
-                incidunt aut quod maiores repudiandae tempora! Qui exercitationem, alias
-                veniam cupiditate quas soluta reiciendis provident eligendi nihil corporis
-                omnis distinctio.</p>
+            <p data-translate="data-our-company-p2"></p>
+        </div>
+        <div class="container px-lg-5 text-center mt-5" style="max-width: 800px;">
+             <h3 class="title-double-color mb-5"><span>VISION</span></h3>
+
+            <p data-translate="data-our-company-vision-p1"></p>
+            <br>
+            <p data-translate="data-our-company-vision-p2"></p>
+        </div>
+        <div class="container px-lg-5 text-center my-5 pb-5" style="max-width: 800px;">
+             <h3 class="title-double-color mb-5"><span>MISSION</span></h3>
+
+            <p data-translate="data-our-company-mission-p1"></p>
         </div>
         <div class="container-fluid p-0">
             <img src="./img/map.png" alt="" style="width: 100%;">
         </div>
-        <div class="container text-center mt-5">
-             <h3 class="title-double-color">OUR <span>TEAM</span></h3>
-
+        <div class="container text-center mt-5"> <span class="title-double-color d-flex justify-content-center align-items-center">
+    <h3 data-translate="our-b">OUR</h3>
+    <span data-translate="team">TEAM</span>
+</span>
             <p style="max-width: 500px; margin:auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit,
                 cumque.</p>
             <div class="container-company-team my-5 d-flex flex-wrap justify-content-evenly">
@@ -161,9 +167,9 @@
         <footer class="footer container-fluid text-center">
             <div class="border-blue py-4 position-relative d-flex justify-content-center align-items-center">
                 <div class="footer-text d-flex justify-content-center align-items-center">
-                     <h5>SHIP WITH US</h5>
+                     <h5 data-translate="header-ship-us">SHIP WITH US</h5>
 
-                    <button class="btn">START</button>
+                    <button data-translate="start" class="btn">START</button>
                 </div>
                 <div class="userImg bottom-0" style="right: 60px;">
                     <img src="./img/userFooter.png" alt="" width="150px">
@@ -195,6 +201,7 @@
             </div>
         </footer>
         <script src="./js/all.js"></script>
+        <script type="text/javascript" src="./translateJs/translate.js"></script>
     </body>
 
 </html>

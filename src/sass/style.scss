@@ -20,8 +20,15 @@ body {
 
 .title-double-color{
     font-weight: bold;
+    h3{
+        color: #000;
+        font-weight: bold;
+        margin: 0;
+        margin-right: .5rem;
+    }
     span{
         color: #1E419B;
+        font-size: calc(1.3rem + 0.6vw);
     }
 }
 
@@ -189,6 +196,8 @@ section{
     .card{
         border: none;
         img{
+            height: 100%;
+            object-fit: cover;
             border: 1px solid #1E419B;
         }
     }
