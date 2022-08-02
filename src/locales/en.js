@@ -9,7 +9,7 @@ export default
 
     "our" : "OUR",
     "our-a" : "OUR",
-    "our-B" : "OUR",
+    "our-b" : "OUR",
     "company": "COMPANY",
     "services": "SERVICES",
     "process": "PROCESS",
