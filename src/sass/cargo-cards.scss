@@ -1,0 +1,117 @@
+.cargo-cards{
+  .cards{
+    padding: 3rem 0;
+  }
+  a{
+    text-decoration: none;
+    color: #D42B24;
+    font-weight: 600;
+  }
+  
+  .aviation-container{
+    margin: 2rem 1rem;
+    border: 2px solid #2B40A4;
+    h3{
+      color: #2B40A4;
+      font-weight: 700;
+    }
+    p.border-small{
+      width: 50px;
+      height: 2px;
+      border: 2px solid #2B40A4;
+      margin: 2rem 0;
+    }
+  
+    .aviation-container-text{
+      line-height: 16px;
+      color: #8e8e8e;
+    }
+  
+    .link{
+      margin: 1rem 0;
+    }
+  }
+  
+  .cargo{
+    ul{
+      padding: 0 1rem;
+      margin: 0;
+      list-style: none;
+      li{
+        display: flex;
+  
+        .hexagon-container{
+          position: relative;
+          .hexagon{
+            rotate: 90deg;
+            font-size: 80px;
+            color: #D42B24;
+          }
+          .hexagon-content{
+            font-size: 40px;
+            position: absolute;
+            top: calc(25% - 2px);
+            left: 25%;
+            color: #fff;
+            rotate: -90deg;
+          }
+        }
+  
+        .cargo-data{
+          margin: 1rem 0;
+          padding-left: 1rem;
+          text-align: justify;
+          
+          h4{
+            font-weight: 700;
+            font-size: 18px;
+            text-align: initial;
+          }
+          p{
+            line-height: 16px;
+            color: #8e8e8e;;
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bookings{
+    background-color: #2B40A4;
+    color: #fff;
+    p{
+      font-weight: 600;
+      font-size: 20px;
+     
+    }
+    .link{
+      margin: 1rem 0;
+      a{
+        color: #fff;
+        background-color: #D42B24;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
+
+@media screen and(min-width:992px){
+  .cargo-cards{
+    .aviation-container{
+      margin: 0 1rem;
+      height: 100%;
+    }
+    .cargo{
+      ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      li{
+        max-width: 380px;
+      }
+    }
+  }
+  
+}

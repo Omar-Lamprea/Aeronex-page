@@ -13,230 +13,290 @@
     
     <body>
         <header>
-            <nav class="navbar py-0 navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container-fluid"> <a class="navbar-brand p-0" href="./">
-                    <img class="mx-3" src="./img/logo@2x.png" alt="" width="120px">
-                </a>
-
+            <nav class="navbar navbar-expand-lg navbar-light py-4">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                    aria-expanded="false" aria-label="Toggle navigation"> <i class="bi bi-list"></i>
 
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item mx-3"> <a data-translate="header-home" class="nav-link text-center active" aria-current="page"
-                                href="./">Home</a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a>
 
                             </li>
-                            <li class="nav-item mx-3"> <a data-translate="header-our-company" class="nav-link text-center" href="./OurCompany.html">Our Company</a>
+                            <li class="nav-item"> <a class="nav-link" href="#">Link</a>
 
-                            </li>
-                            <li class="nav-item mx-3"> <a data-translate="header-our-services" class="nav-link text-center" href="./OurServices.html">Our Services</a>
-
-                            </li>
-                            <li class="nav-item mx-3"> <a data-translate="header-contact-us" class="nav-link text-center" href="./ContactUs.html">Contact Us</a>
-
-                            </li>
-                            <li class="nav-item mx-3"> <a data-translate="header-ship-us" class="nav-link text-center btn-ship"
-                                href="./Ship.html">SHIP WITH US</a>
-
-                            </li>
-                            <li class="nav-item mx-3 d-flex justify-content-center align-items-center">
-                                <select name="lagnuaje" id="language" class="my-3 my-lg-0">
-                                    <option value="En">En</option>
-                                    <option value="Es">Es</option>
-                                </select>
                             </li>
                         </ul>
                     </div>
+                    <div class="contact-links d-none d-lg-flex"> <a href="" class="d-flex align-items-center mx-3">
+                <i class="bi bi-geo-alt me-3"></i>
+                <div class="data-link">
+                  <p>Ubicación:</p>
+                  <p>Lorem ipsum dolor.</p>
+                </div>
+            </a>
+ <a href="" class="d-flex align-items-center mx-3">
+                <i class="bi bi-telephone me-3"></i>
+                <div class="data-link">
+                  <p>Teléfono:</p>
+                  <p>Lorem ipsum dolor.</p>
+                </div>
+            </a>
+ <a href="" class="d-flex align-items-center mx-3">
+                <i class="bi bi-envelope me-3"></i>
+                <div class="data-link">
+                  <p>Email:</p>
+                  <p>Lorem ipsum dolor.</p>
+                </div>
+            </a>
+
+                    </div>
                 </div>
             </nav>
+            <section class="d-flex d-lg-none nav-buttons d-flex justify-content-between"> <a href="">
+            <i class="bi bi-geo-alt"></i>
+        </a>
+ <a href="">
+            <i class="bi bi-telephone"></i>
+        </a>
+ <a href="">
+            <i class="bi bi-envelope"></i>
+        </a>
+
+            </section>
+            <section class="d-none d-lg-block nav-desktop">
+                <nav>
+                    <ul>
+                        <li> <a href="/">
+                Inicio
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                Quienes Somos
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                Nuestros Servicios
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                Nuestro Equipo
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                Noticias de Aviación
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                Contáctenos
+              </a>
+
+                        </li>
+                        <li> <a href="">
+                <p>🇺🇸</p>
+              </a>
+
+                        </li>
+                        <li class="btn-bookings"> <a href="">
+                Reservas
+              </a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </section>
         </header>
-        <div class="container-fluid m-0 p-0">
-            <section class="">
-                <div class="hero">
-                    <img src="./img/Recurso 7@4x.png" alt="">
+        <main class="container-fluid m-0 p-0">
+            <!-- <div class="container-md"> max-width:1320px</div> -->
+            <div class="hero">
+                <div class="content">
+                    <p>Lorem Ipsum is simply dummy text</p>
+                    <p class="text-hero">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+                    <a
+                    href="" class="btn-contact">Contáctenos</a>
+                </div>
+                <img src="./img/hero.webp" alt="hero">
+            </div>
+            <div class="cargo-cards">
+                <div class="cards maxWidth d-lg-flex">
+                    <div class="col-12 col-lg-4 p-3">
+                        <section class="aviation-container p-3 d-lg-flex flex-column justify-content-between">
+                             <h3>AVIACIÓN <br> INTELIGENTE</h3>
+
+                            <p class="border-small"></p>
+                            <p class="aviation-container-text">Ofrecemos una solución estratégica e integral de servicios de carga para
+                                las aerolíneas de pasajeros low-cost del mundo que necesiten generar un
+                                rendimiento más eficiente e inteligente de su unidad de negocios de carga.</p>
+                            <div
+                            class="link"> <a href="">VER MÁS</a>
+
+                    </div>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-8 p-3">
+                    <section class="cargo">
+                        <ul class="d-lg-flex">
+                            <li>
+                                <div class="hexagon-container">
+                                    <div class="hexagon"> <i class="bi bi-hexagon-fill">
+                  <div class="hexagon-content">
+                    <i class="bi bi-check-lg"></i>
+
+                                    </div>
+                                    </i>
+                                </div>
+                </div>
+                <div class="cargo-data">
+                     <h4>Carga aceptada</h4>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere
+                        iste at ipsa iusto excepturi perspiciatis tempore in quasi facilis quibusdam,
+                        libero optio ad velit tempora impedit! Quasi, ea fugit.</p> <a href="">VER MÁS</a>
+
+                </div>
+                </li>
+                <li>
+                    <div class="hexagon-container">
+                        <div class="hexagon"> <i class="bi bi-hexagon-fill">
+                  <div class="hexagon-content">
+                    <i class="bi bi-x"></i>
+
+                        </div>
+                        </i>
+                    </div>
+            </div>
+            <div class="cargo-data">
+                 <h4>Carga no aceptada</h4>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere
+                    iste at ipsa iusto excepturi perspiciatis tempore in quasi facilis quibusdam,
+                    libero optio ad velit tempora impedit! Quasi, ea fugit.</p> <a href="">VER MÁS</a>
+
+            </div>
+            </li>
+            <li>
+                <div class="hexagon-container">
+                    <div class="hexagon"> <i class="bi bi-hexagon-fill">
+                  <div class="hexagon-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                      <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z"/>
+                    </svg>
+                  </div>
+                </i>
+
+                    </div>
+                </div>
+                <div class="cargo-data">
+                     <h4>Mercados y aeropuertos
+                actualmente operados:</h4>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere
+                        iste at ipsa iusto excepturi perspiciatis tempore in quasi facilis quibusdam,
+                        libero optio ad velit tempora impedit! Quasi, ea fugit.</p> <a href="">VER MÁS</a>
+
+                </div>
+            </li>
+            <li>
+                <div class="hexagon-container">
+                    <div class="hexagon"> <i class="bi bi-hexagon-fill">
+                  <div class="hexagon-content">
+                    <i class="bi bi-box-seam"></i>
+
+                    </div>
+                    </i>
+                </div>
+                </div>
+                <div class="cargo-data">
+                     <h4>
+                Requerimientos para el transporte
+                de carga por JetBlue:
+              </h4>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere
+                        iste at ipsa iusto excepturi perspiciatis tempore in quasi facilis quibusdam,
+                        libero optio ad velit tempora impedit! Quasi, ea fugit.</p> <a href="">VER MÁS</a>
+
+                </div>
+            </li>
+            </ul>
+            </section>
+            </div>
+            </div>
+            <section class="bookings text-center px-5 py-3 d-lg-flex justify-content-between align-items-center">
+                <div class="maxWidth w-100 d-lg-flex align-items-center justify-content-between">
+                    <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit, sed diam n
+                        onummy nibh euismod</p>
+                    <div class="link"> <a href="">Reservas</a>
+
+                    </div>
                 </div>
             </section>
-            <div class="container-fluid container-home-news my-5">
-                <div class="container container-news p-0 d-md-flex justify-content-between">
-                    <div class="title-news mb-3 mb-md-0">
-                         <h5 style="min-width: 160px; font-weight: bold;">ÚLTIMAS <br> NOTICIAS</h5>
-
+            </div>
+        </main>
+        <footer class="footer text-center text-lg-start">
+            <div class="maxWidth d-lg-flex justify-content-between">
+                <div class="logo-links">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="">
                     </div>
-                    <div class="cards-news m-2 d-flex flex-wrap align-items-center justify-content-center">
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news1.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
+                    <div class="links-footer">
+                        <p>Para envíos de carga por medio de JetBlue</p>
+                        <p>Customer Portal Tracking
+                            <br> <a href="">https://bit.ly/3TqATVT</a>
 
-                            </div>
+                        </p>
+                        <p>For flight schedule, please visit
+                            <br> <a href="">https://www.jetblue.com/</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-data">
+                     <h5>INFORMACIÓN DE CONTACTO</h5>
+
+                    <p class="username">Carla Schoo Lastra</p>
+                    <div class="user-contact">
+                        <div class="tel data"> <i class="bi bi-telephone-fill"></i>
+ <span>333 333 3333 - 333 3333</span>
+
                         </div>
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news2.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
+                        <div class="mail data"> <i class="bi bi-envelope-fill"></i>
+ <span>carla@aeronexcargo.com</span>
 
-                            </div>
                         </div>
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news3.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
+                        <div class="social-networks">
+                            <p>SÍGUENOS</p> <a href=""><i class="bi bi-facebook me-1"></i></a>
+ <a href=""><i class="bi bi-instagram ms-1"></i></a>
 
-                            </div>
-                        </div>
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news4.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
-
-                            </div>
-                        </div>
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news5.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
-
-                            </div>
-                        </div>
-                        <div class="card mx-2 mb-3 mb-xl-0" style="width: 8rem; border: none;">
-                            <img src="./img/news6.png" class="card-img-top" alt="news">
-                            <div class="card-body p-0">
-                                <p class="card-text m-0">Following judge ruling, US Airlines drop mandate mask After two years,
-                                    a federal judge ruled today April 18</p> <a data-translate="btn-read-more"
-                                href="#" class="btn">READ MORE</a>
-
-                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="contact-form">
+                    <form action="" class="d-flex flex-column">
+                         <h3>CONTÁCTENOS</h3>
+
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" name="" id="" placeholder="Email" required>
+                        <input type="tel" name="" id="" placeholder="Teléfono" required>
+                        <button type="submit">ENVIAR</button>
+                    </form>
                 </div>
             </div>
-            <div class="container container-card-home card-about">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <img src="./img/img-porcent.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 ps-md-0">
-                        <div class="container-home-text pt-3 text-center text-md-start"> <span class="title-double-color d-flex align-items-center">
-          <h3 data-translate="our-a">OUR</h3>
-          <span data-translate="company">COMPANY</span>
-</span>
-                            <p class="my-3"
-                            style="font-weight: 600;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula eget dolor.</p> <a data-translate="btn-read-more" class="btn mb-3 btn-blue"
-                            href="./OurServices.html">READ MORE</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluidmy-3 container-card-home card-services">
-                <div class="container px-lg-5">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-6 pe-0">
-                            <div class="container-home-text text-center text-md-end my-5"> <span class="title-double-color d-flex justify-content-end align-items-center">
-            <h3 data-translate="our">OUR</h3>
-            <span data-translate="services">SERVICES</span>
-</span>
-                                <p class="my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae incidunt
-                                    laboriosam aperiam necessitatibus dolorem ab dolore dolores nisi, soluta
-                                    alias quibusdam deleniti, unde praesentium, doloribus quaerat illum ipsam.</p>
-                                <a
-                                data-translate="btn-read-more" href="#" class="btn btn-blue">READ MORE</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                            <div class="container-card-service mb-4">
-                                <img class="my-3" src="./img/Services-icon-1.png" alt="" style="width: 60px;"
-                                />
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, sapiente.</p>
-                            </div>
-                            <div class="container-card-service mb-4">
-                                <img class="my-3" src="./img/Services-icon-3.png" alt="" style="width: 60px;"
-                                />
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, sapiente.</p>
-                            </div>
-                            <div class="container-card-service mb-4">
-                                <img class="my-3" src="./img/Services-icon-2.png" alt="" style="width: 60px;"
-                                />
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, sapiente.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container container-home-process text-center my-5"> <span class="title-double-color mb-5 d-flex justify-content-center align-items-center">
-    <h3 data-translate="process">grafico de </h3>
-    <span data-translate="chart">procesos</span>
-</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, omnis at
-                    qui rerum ad modi?</p>
-                <div class="container-icons-process d-flex flex-column flex-md-row justify-content-center align-items-center">
-                    <div class="icon-process mt-3">
-                        <img src="./img/iconSettings.png" alt="" width="60px">
-                        <p data-translate="develop">DESARROLLO</p>
-                    </div>
-                    <div class="icon-process mt-3">
-                        <img src="./img/iconSettings2.png" alt="" width="60px">
-                        <p data-translate="execute">EJECUCION</p>
-                    </div>
-                    <div class="icon-process mt-3">
-                        <img src="./img/iconSettings3.png" alt="" width="60px">
-                        <p data-translate="realization">REALIZACION</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer container-fluid text-center">
-            <div class="border-blue py-4 position-relative d-flex justify-content-center align-items-center">
-                <div class="footer-text d-flex justify-content-center align-items-center">
-                     <h5 data-translate="header-ship-us">SHIP WITH US</h5>
-
-                    <button data-translate="start" class="btn">START</button>
-                </div>
-                <div class="userImg bottom-0" style="right: 60px;">
-                    <img src="./img/userFooter.png" alt="" width="150px">
-                </div>
-            </div>
-            <div class="footer-data-company">
-                <div class="d-flex flex-column">
-                    <div class="container">
-                         <h4>NEW YORK CITY</h4>
-
-                        <div class="container-data d-flex flex-column flex-md-row justify-content-between align-items-center">
-                            <div class="data d-flex align-items-center"> <i class="bi bi-geo-alt-fill me-2"></i>
- <a href="#">
-                    <p>Bridge Str, Wilmington <br> 11226 United States</p>
-                  </a>
-
-                            </div>
-                            <div class="data d-flex align-items-center"> <i class="bi bi-envelope-fill me-2"></i>
- <a href="mailto:">company@domain.com</a>
-
-                            </div>
-                            <div class="data  d-flex align-items-center"> <i class="bi bi-telephone-fill me-2"></i>
- <a href="tel:+">(888)9000-33-666</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="copy text-center">Copyright 2022 | Todos los derechos reservados | Políticas de Privacidad
+                |</div>
         </footer>
         <script src="./js/all.js"></script>
-        <script type="text/javascript" src="./translateJs/translate.js"></script>
+        <!-- <script type="text/javascript" src="./translateJs/translate.js"></script> -->
     </body>
 
 </html>
