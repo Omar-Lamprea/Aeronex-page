@@ -45,7 +45,7 @@ footer{
   }
 
   .contact-form{
-    padding: 1rem 4rem;
+    padding: 1rem;
     form{
       h3{
         font-weight: 700;
@@ -81,7 +81,9 @@ footer{
 
 @media screen and(min-width:992px){
   footer{
-    padding: 2rem;
+    .foter-container{
+      padding:  2rem;
+    }
     padding-bottom: 0;
 
     .links-footer{

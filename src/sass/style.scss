@@ -7,6 +7,9 @@
 @import './cargo-cards.scss';
 @import './footer.scss';
 
+@import'./team.scss';
+@import'./allies.scss';
+
 p, h1, h2, h3, h4, h5{
     margin: 0;
 }
@@ -23,4 +26,11 @@ body {
         max-width: 1420px;
         margin: 0 auto;
     }
+    p.border-small{
+        width: 50px;
+        height: 2px;
+        border: 2px solid #2B40A4;
+        margin: 2rem 0;
+      }
+    
 }
