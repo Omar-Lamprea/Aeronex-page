@@ -10,6 +10,9 @@
 @import'./team.scss';
 @import'./allies.scss';
 
+@import'./about.scss';
+
+
 p, h1, h2, h3, h4, h5{
     margin: 0;
 }
@@ -23,7 +26,8 @@ body {
         }
     }
     .maxWidth{
-        max-width: 1420px;
+        // max-width: 1420px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     p.border-small{
