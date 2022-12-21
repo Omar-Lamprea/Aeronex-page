@@ -20,6 +20,9 @@ p, h1, h2, h3, h4, h5{
     font-family: 'Montserrat', sans-serif !important;
 }
 body {
+    main{
+        padding-top: 158.69px;
+    }
     .logo{
         img{
             max-width: 200px;
@@ -37,4 +40,12 @@ body {
         margin: 2rem 0;
       }
     
+}
+
+@media screen and(min-width:992px){
+    body{
+        main{
+            padding-top: 141.88px
+        }
+    }
 }
