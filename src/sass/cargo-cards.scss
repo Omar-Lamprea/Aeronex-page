@@ -37,13 +37,14 @@
           .hexagon{
             rotate: 90deg;
             font-size: 80px;
-            color: #D42B24;
+            // color: #D42B24;
+            color: #D42B24a6;;
           }
           .hexagon-content{
-            font-size: 40px;
+            font-size: 50px;
             position: absolute;
-            top: calc(25% - 2px);
-            left: 25%;
+            top: calc(50% - 40px);
+            left: 21%;
             color: #fff;
             rotate: -90deg;
           }

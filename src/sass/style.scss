@@ -21,11 +21,14 @@ p, h1, h2, h3, h4, h5{
 }
 body {
     main{
-        padding-top: 158.69px;
+        padding-top: 161px;
     }
     .logo{
         img{
-            max-width: 200px;
+            width: 155px;
+            height: 53px;
+            background-color: white;
+            padding: 5px;
         }
     }
     .maxWidth{
@@ -45,7 +48,7 @@ body {
 @media screen and(min-width:992px){
     body{
         main{
-            padding-top: 141.88px
+            padding-top: 141px
         }
     }
 }
