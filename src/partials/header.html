@@ -96,7 +96,7 @@
 
       <section class="d-none d-lg-block nav-desktop py-2">
         <nav class="maxWidth">
-          <ul>
+          <ul class="ul-desk">
             <li>
               <a href="/">Inicio</a>
             </li>
@@ -112,9 +112,20 @@
             <li>
               <a href="../team.html">Nuestro Equipo</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Noticias de Aviación</a>
-            </li>
+            </li> -->
+            
+            <div class="dropdown" id="drop-main">
+              <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Noticias de Aviación
+              </a>
+              <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
+                <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com/stocks.php" target="_blank" rel=”noopener noreferrer”>Aeronexllc</a></li>
+              </ul>
+            </div>
+
             <li>
               <a href="">Contáctenos</a>
             </li>
