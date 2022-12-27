@@ -40,6 +40,17 @@ header{
           font-size: 40px;
       }
   }
+
+  .dropdown{
+    a{
+        color: #7e7e7e;
+        text-decoration: none;
+    }
+    a.drop-a2:active{
+        background-color: inherit;
+        color: #7e7e7e;
+    }
+  }
 }
 
 @media screen and(min-width:992px){
