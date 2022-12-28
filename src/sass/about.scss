@@ -5,10 +5,12 @@
     font-weight: 700;
   }
   p{
+    text-align: justify;
     line-height: 16px;
     color: #8e8e8e;
   }
   .about-images{
+    margin-top: 2rem;
     .img-1{
       width: 100%;
     }
@@ -56,7 +58,7 @@
     height: inherit;
     .body-card{
       p{
-        color: inherit;
+        color: #8e8e8e;
       }
     }
   }
