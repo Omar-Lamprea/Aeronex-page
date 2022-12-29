@@ -15,6 +15,10 @@ header{
     }
   }
 
+  .navbar-light .navbar-nav .nav-link span{
+    color: rgba(0, 0, 0, 0.55);
+  }
+
   button.navbar-toggler{
       border: none;
       i{

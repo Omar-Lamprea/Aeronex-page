@@ -168,6 +168,15 @@ dataDesktop.forEach((list, i )=> {
       user.name ? userNodo.innerHTML += userContainer : false
   });
 });
+const btnDrop = document.getElementById('drop-main')
+btnDrop.addEventListener('mouseover', (e) =>{
+  $('.dropdown-toggle').dropdown('show')
+})
+btnDrop.addEventListener('mouseleave', (e) =>{
+  $('.dropdown-toggle').dropdown('hide')
+})
+
+
 
 const toggleResquest = (e) =>{
   // const p = nodo.children[1].children[0]
@@ -184,12 +193,3 @@ const toggleResquest = (e) =>{
     icon.classList.add('rotateIcon1')
   }
 }
-
-
-const btnDrop = document.getElementById('drop-main')
-btnDrop.addEventListener('mouseover', (e) =>{
-  $('.dropdown-toggle').dropdown('show')
-})
-btnDrop.addEventListener('mouseleave', (e) =>{
-  $('.dropdown-toggle').dropdown('hide')
-})
