@@ -29,9 +29,14 @@
     color: #fff;
     font-weight: 700;
 
-    p:first-child{
+    .hero-title{
+      font-weight: 600;
+      font-size: 26px;
+    }
+
+    .keywords-content p{
       font-size: 20px;
-      margin: 1rem 0;
+      // margin: 1rem 0;
       font-weight: 500;
     }
     .keywords-content{
@@ -39,10 +44,15 @@
       background-color: rgb(0 0 0 / 45%);
       border-radius: 5px;
 
-      .keywords p{
-        font-size: 20px;
-        max-width: 800px;
-        font-weight: 700;
+      .keywords{
+        // font-size: 20px;
+        // max-width: 800px;
+        // display: none;
+        font-weight: 500;
+        color: transparent;
+        .key-1{
+          animation: showText 2s ease-in-out;
+        }
       }
     }
   }
@@ -73,5 +83,15 @@
       }
       
     }
+  }
+}
+
+
+@keyframes showText {
+  from {
+    color: transparent;
+  }
+  to{
+    color: #fff;
   }
 }

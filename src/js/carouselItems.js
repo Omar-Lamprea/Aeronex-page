@@ -1,6 +1,5 @@
 const nodo = document.getElementById('carouser-handler')
 
-
 const tbnHandlerDesk = 6
 const tbnHandlerMobile = 17
 
@@ -123,7 +122,6 @@ const dataDesktop = [
 ]
 
 
-
 dataDesktop.forEach((list, i )=> {
   const container = 
     `<div class="carousel-item">
@@ -134,7 +132,6 @@ dataDesktop.forEach((list, i )=> {
   
   nodo.innerHTML += container
   i == 0 ? nodo.firstElementChild.classList.add('active') : false
-    // console.log(list);
 
   list.forEach(user => {
     const userNodo = document.getElementById(`item-${i}`)
