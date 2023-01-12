@@ -16,7 +16,7 @@ boxes.forEach(node => {
 
 function boxData (e){
   clearBoxes()
-  activeTarget(e.path)
+  activeTarget(e.composedPath())
 }
 
 const clearBoxes = () =>{
