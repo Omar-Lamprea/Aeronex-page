@@ -74,7 +74,7 @@
           h4{
             font-weight: 700;
             font-size: 18px;
-            text-align: initial;
+            text-align: center;
           }
           p{
             line-height: 16px;
@@ -84,6 +84,13 @@
         i::before{
           rotate: 90deg;
         }
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+      }
+      li:hover{
+        box-shadow: 4px 4px 9px 0px #b7b7b7;
+        background-color: #f9f9f9;
+        translate: -5px -5px;
       }
     }
   }
@@ -166,15 +173,9 @@
           .cargo-data{
             // padding: 0;
           }
-          transition: all .25s ease-in-out;
-          cursor: pointer;
-        }
-        li:hover{
-          box-shadow: 4px 4px 9px 0px #b7b7b7;
-          background-color: #f9f9f9;
-          translate: -5px -5px;
           
         }
+        
         
       }
     }
