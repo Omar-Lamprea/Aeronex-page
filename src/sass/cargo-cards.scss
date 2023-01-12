@@ -51,7 +51,7 @@
         .hexagon-container{
           position: relative;
           .hexagon{
-            rotate: 90deg;
+            // rotate: 90deg;
             font-size: 80px;
             // color: #D42B24;
             color: #D42B24a6;;
@@ -60,7 +60,7 @@
             font-size: 50px;
             position: absolute;
             top: calc(50% - 40px);
-            left: 21%;
+            left: 20%;
             color: #fff;
             rotate: -90deg;
           }
@@ -68,7 +68,7 @@
   
         .cargo-data{
           margin: 1rem 0;
-          padding-left: 1rem;
+          // padding-left: 1rem;
           // text-align: justify;
           
           h4{
@@ -81,8 +81,27 @@
             color: #8e8e8e;;
           }
         }
+        i::before{
+          rotate: 90deg;
+        }
       }
     }
+  }
+
+  .box-cargo-data{
+    border: 1px solid #cdcdcd;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    height: 480px;
+    overflow: auto;
+  }
+
+  .box-active{
+    box-shadow: 4px 4px 9px 0px #b7b7b7;
+    background-color: #f9f9f9;
+    translate: -5px -5px;
+    padding: 0 .25rem;
   }
 
   .bookings{
@@ -118,10 +137,49 @@
       ul{
         flex-wrap: wrap;
         justify-content: space-between;
+        li{
+          max-width: 300px;
+          min-height: 180px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          padding: .5rem;
+          margin-bottom: 1rem;
+          .hexagon-container{
+            .hexagon{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              line-height: 0;
+            }
+            .hexagon-content{
+              top: calc(50% - 25px);
+              left: 20%;
+            }
+          i{
+            position: relative;
+          }
+          }
+          i::before{
+            rotate: 90deg;
+          }
+          .cargo-data{
+            // padding: 0;
+          }
+          transition: all .25s ease-in-out;
+          cursor: pointer;
+        }
+        li:hover{
+          box-shadow: 4px 4px 9px 0px #b7b7b7;
+          background-color: #f9f9f9;
+          translate: -5px -5px;
+          
+        }
+        
       }
-      li{
-        max-width: 360px;
-      }
+    }
+    .box-cargo-data{
+      height: 250px;
     }
   }
   

@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () =>{
       text.style.color = "#fff"
     }, time);
   }
+
+  
   
   animationHero(0, 0, "MODELO DE NEGOCIO ÚNICO", "key-1")
   animationHero(1000, 2000, "RENTABILIDAD", "key-2")
