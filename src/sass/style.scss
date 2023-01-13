@@ -22,7 +22,9 @@ p, h1, h2, h3, h4, h5{
 body {
     .logo{
         img{
-            height: 70px;
+            // width: 180px;
+            height: 59px;
+            object-fit: contain;
         }
     }
     section.scroll{
