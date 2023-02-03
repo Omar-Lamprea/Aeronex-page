@@ -1,13 +1,13 @@
 .hero{
   position: relative;
-  height: 76vh;
+  height: calc(100vh - 240px);
   background-color: rgb(37 61 147 / 46%);
 
   .carousel{
     position: absolute;
     top: 0;
     z-index: -1;
-    height: 76vh;
+    height: calc(100vh - 240px);
     width: 100%;
     .carousel-inner, .carousel-item{
       height: 100%;
