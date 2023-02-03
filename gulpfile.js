@@ -68,6 +68,24 @@ function translateJs(){
         });
       });
 }
+
+function gMaps(){
+    return rollup.rollup({
+        input: './src/Gmaps/maps.js',
+        plugins: [
+            nodeResolve.nodeResolve(),
+            babel.babel()
+        ]
+    }).then(bundle => {
+        return bundle.write({
+          file: './docs/Gmaps/maps.js',
+          format: 'umd',
+          name: 'library',
+          sourcemap: true
+        });
+      });
+}
+
 function locales(){
     return gulp.src('src/locales/*.js')
     .pipe(gulp.dest('docs/locales'));
@@ -102,6 +120,7 @@ function watchFiles() {
     gulp.watch('src/js/*.js', gulp.series(js, browserSyncReload));
     gulp.watch('src/translateJs/*.js', gulp.series(translateJs, browserSyncReload));
     gulp.watch('src/locales/*.js', gulp.series(locales, browserSyncReload));
+    gulp.watch('src/Gmaps/*.js', gulp.series(gMaps, browserSyncReload));
     gulp.watch('src/img/**/*.*', gulp.series(img));
 
     return;
@@ -116,5 +135,5 @@ exports.css = css;
 exports.html = html;
 exports.js = js;
 exports.del = del;
-exports.serve = gulp.parallel(html, css, js, translateJs, locales, img, watchFiles, serve);
-exports.default = gulp.series(del, html, css, js, translateJs, locales, img);
+exports.serve = gulp.parallel(html, css, js, translateJs, gMaps, locales, img, watchFiles, serve);
+exports.default = gulp.series(del, html, css, js, translateJs, gMaps, locales, img);

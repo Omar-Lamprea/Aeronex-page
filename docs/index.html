@@ -30,35 +30,42 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav text-center">
-                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">
+                            <li class="nav-item"> <a data-nav="home" class="nav-link active" aria-current="page" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Inicio
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#about">
+                            <li class="nav-item"> <a data-nav="about" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Quienes Somos
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#services">
+                            <li class="nav-item"> <a data-nav="airports" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestros Servicios 
+                    Nuestros Mercados y Aeropuertos 
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">
+                            <li class="nav-item"> <a data-nav="services" class="nav-link" href="#">
+                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    Nuestros Servicios
+                  </span>
+                </a>
+
+                            </li>
+                            <li class="nav-item"> <a data-nav="" class="nav-link" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Instalaciones
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#OurTeam">
+                            <li class="nav-item"> <a data-nav="OurTeam" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Nuestro Equipo
                   </span>
@@ -81,7 +88,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <li class="nav-item"> <a class="nav-link" href="#contact">
+                            <li class="nav-item"> <a data-nav="contact" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Contáctenos
                   </span>
@@ -96,7 +103,8 @@
               </li> -->
                         </ul>
                     </div>
-                    <div class="contact-links d-none d-lg-flex"> <a href="#" class="d-flex align-items-center mx-3">
+                    <div class="contact-links d-none d-lg-flex"> <a href="https://goo.gl/maps/dSsyDY7vYda25Adz7" target="_blank" rel="noopener noreferrer"
+                        class="d-flex align-items-center mx-3">
                 <i class="bi bi-geo-alt me-3"></i>
                 <div class="data-link">
                   <p>Ubicación:</p>
@@ -135,19 +143,22 @@
             <section class="d-none d-lg-block nav-desktop py-2">
                 <nav class="maxWidth">
                     <ul class="ul-desk">
-                        <li> <a href="#">Inicio</a>
+                        <li> <a href="#" data-nav="home">Inicio</a>
 
                         </li>
-                        <li> <a href="#about">Quienes Somos</a>
+                        <li> <a data-nav="about">Quienes Somos</a>
 
                         </li>
-                        <li> <a href="#services">Nuestros Servicios</a>
+                        <li> <a data-nav="airports">Nuestros Mercados y Aeropuertos</a>
 
                         </li>
-                        <li> <a href="#">Instalaciones</a>
+                        <li> <a href="#" data-nav="services">Nuestros Servicios</a>
 
                         </li>
-                        <li> <a href="#OurTeam">Nuestro Equipo</a>
+                        <li> <a href="#" data-nav="">Instalaciones</a>
+
+                        </li>
+                        <li> <a data-nav="OurTeam">Nuestro Equipo</a>
 
                         </li>
                         <div class="dropdown" id="drop-main"> <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1"
@@ -166,7 +177,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <li> <a href="#contact">Contáctenos</a>
+                        <li> <a data-nav="contact">Contáctenos</a>
 
                         </li>
                         <li> <a href="#"><p>🇺🇸</p></a>
@@ -182,23 +193,39 @@
         <main class="container-fluid px-0">
             <div class="hero">
                 <div class="content">
-                    <p style="max-width: 800px;" class="hero-title mb-3">AVIACIÓN INTELIGENTE
-                        <!-- Somos una compañía orientada a servir con soluciones
-                        inteligentes y de bajo costo a empresas aéreas y freight forwards. -->
-                    </p>
-                    <div class="keywords-content p-3">
-                        <div class="keywords">
-                            <p id="key-1" class="my-3 my-lg-0">MODELO DE NEGOCIO ÚNICO</p>
-                        </div>
-                        <div class="keywords d-lg-flex justify-content-between my-lg-5 mx-lg-3">
-                            <p id="key-4" class="my-3 my-lg-0">EXPERIENCIA</p>
-                            <p id="key-2" class="my-3 my-lg-0">INNOVACIÓN</p>
-                        </div>
-                        <div class="keywords">
-                            <p id="key-3" class="my-3 my-lg-0">RENTABILIDAD</p>
-                        </div>
-                    </div> <a href="#contact" class="btn-contact">Contáctenos</a>
+                    <!-- animacion de palabras normal: -->
+                    <!-- <div class="keywords-content p-3">
+        <div class="keywords">
+          <p id="key-1" class="my-3 my-lg-0">MODELO DE NEGOCIO ÚNICO</p>
+        </div>
 
+        <div class="keywords d-lg-flex justify-content-between my-lg-5 mx-lg-3">
+          <p id="key-4" class="my-3 my-lg-0">EXPERIENCIA</p>
+          <p id="key-2" class="my-3 my-lg-0">INNOVACIÓN</p>
+        </div>
+  
+        <div class="keywords">
+          <p id="key-3" class="my-3 my-lg-0">RENTABILIDAD</p>
+        </div>
+      </div> -->
+                    <!-- animacion de palabras infinito -->
+                    <div class="container-slider">
+                        <div class="slider">
+                            <div class="logos">
+                                <p>MODELO DE NEGOCIO ÚNICO</p>
+                                <p>EXPERIENCIA</p>
+                                <p class="">INNOVACIÓN</p>
+                                <p class="">RENTABILIDAD</p>
+                            </div>
+                            <div class="logos d-none d-lg-inline-block">
+                                <p class="">MODELO DE NEGOCIO ÚNICO</p>
+                                <p class="">EXPERIENCIA</p>
+                                <p>INNOVACIÓN</p>
+                                <p>RENTABILIDAD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="#contact" class="btn-contact">Contáctenos</a> -->
                 </div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -220,10 +247,14 @@
                     </div>
                 </div>
             </div>
-            <section id="services" class="scroll">
+            <section id="airports">
                 <div class="cargo-cards">
+                    <p class="mb-3 text-center mx-3 mx-lg-auto mt-5" style="font-weight: 600;
+          font-size: 18px;
+          max-width: 800px;">Somos una compañía orientada a servir con soluciones inteligentes y de
+                        bajo costo a empresas aéreas y freight forwards.</p>
                     <div class="cargo-container d-flex d-lg-block px-2">
-                        <div class="cards maxWidth d-lg-flex pb-0">
+                        <div class="cards maxWidth d-lg-flex flex-column pb-0">
                             <div class="cargo" style="width: 100%;">
                                 <ul class="d-lg-flex px-1" id="box-container">
                                     <li class="box-active">
@@ -302,6 +333,9 @@
                     </ul>
                 </div>
                 </div>
+                <!-- <div id="map" style="height: 500px;">
+    maps
+  </div> -->
                 <section class="bookings text-center p-3 px-lg-5 py-5 d-lg-flex justify-content-between align-items-center">
                     <div class="maxWidth w-100 d-lg-flex align-items-center justify-content-center">
                         <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit, sed diam n
@@ -310,7 +344,7 @@
                 </section>
                 </div>
             </section>
-            <section id="OurTeam" class="scroll">
+            <section id="OurTeam">
                 <div class="our-team">
                     <div class="container-team maxWidth">
                          <h3 class="mt-5">Nuestro Equipo</h3>
@@ -356,7 +390,7 @@
                     </div>
                 </section>
             </section>
-            <section id="about" class="scroll">
+            <section id="about">
                 <section class="about maxWidth">
                     <div class="row">
                         <div class="about-container col-12 col-lg-6">
@@ -570,6 +604,7 @@
         </footer>
         <script src="./js/all.js"></script>
         <!-- <script type="text/javascript" src="./translateJs/translate.js"></script> -->
+        <script type="text/javascript" src="./Gmaps/maps.js"></script>
     </body>
 
 </html>

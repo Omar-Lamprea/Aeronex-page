@@ -30,35 +30,42 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav text-center">
-                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">
+                            <li class="nav-item"> <a data-nav="home" class="nav-link active" aria-current="page" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Inicio
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#about">
+                            <li class="nav-item"> <a data-nav="about" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Quienes Somos
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#services">
+                            <li class="nav-item"> <a data-nav="airports" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestros Servicios 
+                    Nuestros Mercados y Aeropuertos 
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">
+                            <li class="nav-item"> <a data-nav="services" class="nav-link" href="#">
+                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    Nuestros Servicios
+                  </span>
+                </a>
+
+                            </li>
+                            <li class="nav-item"> <a data-nav="" class="nav-link" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Instalaciones
                   </span>
                 </a>
 
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="#OurTeam">
+                            <li class="nav-item"> <a data-nav="OurTeam" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Nuestro Equipo
                   </span>
@@ -81,7 +88,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <li class="nav-item"> <a class="nav-link" href="#contact">
+                            <li class="nav-item"> <a data-nav="contact" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Contáctenos
                   </span>
@@ -96,7 +103,8 @@
               </li> -->
                         </ul>
                     </div>
-                    <div class="contact-links d-none d-lg-flex"> <a href="#" class="d-flex align-items-center mx-3">
+                    <div class="contact-links d-none d-lg-flex"> <a href="https://goo.gl/maps/dSsyDY7vYda25Adz7" target="_blank" rel="noopener noreferrer"
+                        class="d-flex align-items-center mx-3">
                 <i class="bi bi-geo-alt me-3"></i>
                 <div class="data-link">
                   <p>Ubicación:</p>
@@ -135,19 +143,22 @@
             <section class="d-none d-lg-block nav-desktop py-2">
                 <nav class="maxWidth">
                     <ul class="ul-desk">
-                        <li> <a href="#">Inicio</a>
+                        <li> <a href="#" data-nav="home">Inicio</a>
 
                         </li>
-                        <li> <a href="#about">Quienes Somos</a>
+                        <li> <a data-nav="about">Quienes Somos</a>
 
                         </li>
-                        <li> <a href="#services">Nuestros Servicios</a>
+                        <li> <a data-nav="airports">Nuestros Mercados y Aeropuertos</a>
 
                         </li>
-                        <li> <a href="#">Instalaciones</a>
+                        <li> <a href="#" data-nav="services">Nuestros Servicios</a>
 
                         </li>
-                        <li> <a href="#OurTeam">Nuestro Equipo</a>
+                        <li> <a href="#" data-nav="">Instalaciones</a>
+
+                        </li>
+                        <li> <a data-nav="OurTeam">Nuestro Equipo</a>
 
                         </li>
                         <div class="dropdown" id="drop-main"> <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1"
@@ -166,7 +177,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <li> <a href="#contact">Contáctenos</a>
+                        <li> <a data-nav="contact">Contáctenos</a>
 
                         </li>
                         <li> <a href="#"><p>🇺🇸</p></a>
@@ -281,6 +292,7 @@
         </footer>
         <script src="./js/all.js"></script>
         <!-- <script type="text/javascript" src="./translateJs/translate.js"></script> -->
+        <script type="text/javascript" src="./Gmaps/maps.js"></script>
     </body>
 
 </html>

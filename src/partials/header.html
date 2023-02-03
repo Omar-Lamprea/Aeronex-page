@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/logo_cargo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    
     <title>Aeronex Cargo Turn-Key Solutions</title>
   </head>
 <body>
@@ -25,35 +26,42 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a data-nav="home" class="nav-link active" aria-current="page" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Inicio
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">
+                <a data-nav="about" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Quienes Somos
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">
+                <a data-nav="airports" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestros Servicios 
+                    Nuestros Mercados y Aeropuertos 
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a data-nav="services" class="nav-link" href="#">
+                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    Nuestros Servicios
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-nav="" class="nav-link" href="#">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Instalaciones
                   </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#OurTeam">
+                <a data-nav="OurTeam" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Nuestro Equipo
                   </span>
@@ -71,7 +79,7 @@
               </div>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact">
+                <a data-nav="contact" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Contáctenos
                   </span>
@@ -88,7 +96,7 @@
           </div>
 
           <div class="contact-links d-none d-lg-flex">
-            <a href="#" class="d-flex align-items-center mx-3">
+            <a href="https://goo.gl/maps/dSsyDY7vYda25Adz7" target="_blank" rel="noopener noreferrer"class="d-flex align-items-center mx-3">
                 <i class="bi bi-geo-alt me-3"></i>
                 <div class="data-link">
                   <p>Ubicación:</p>
@@ -130,19 +138,22 @@
         <nav class="maxWidth">
           <ul class="ul-desk">
             <li>
-              <a href="#">Inicio</a>
+              <a href="#" data-nav="home">Inicio</a>
             </li>
             <li>
-              <a href="#about">Quienes Somos</a>
+              <a data-nav="about">Quienes Somos</a>
             </li>
             <li>
-              <a href="#services">Nuestros Servicios</a>
+              <a data-nav="airports">Nuestros Mercados y Aeropuertos</a>
             </li>
             <li>
-              <a href="#">Instalaciones</a>
+              <a href="#" data-nav="services">Nuestros Servicios</a>
             </li>
             <li>
-              <a href="#OurTeam">Nuestro Equipo</a>
+              <a href="#" data-nav="">Instalaciones</a>
+            </li>
+            <li>
+              <a data-nav="OurTeam">Nuestro Equipo</a>
             </li>
 
             <div class="dropdown" id="drop-main">
@@ -156,7 +167,7 @@
             </div>
 
             <li>
-              <a href="#contact">Contáctenos</a>
+              <a data-nav="contact">Contáctenos</a>
             </li>
             <li>
               <a href="#"><p>🇺🇸</p></a>

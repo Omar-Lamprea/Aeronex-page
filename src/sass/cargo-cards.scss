@@ -47,7 +47,9 @@
       list-style: none;
       li{
         display: flex;
-  
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+        justify-content: center;
         .hexagon-container{
           position: relative;
           .hexagon{
@@ -84,8 +86,7 @@
         i::before{
           rotate: 90deg;
         }
-        transition: all .25s ease-in-out;
-        cursor: pointer;
+        
       }
       li:hover{
         box-shadow: 4px 4px 9px 0px #b7b7b7;
@@ -149,8 +150,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         li{
-          max-width: 300px;
-          min-height: 180px;
+          width: calc(95% / 4);
           display: flex;
           flex-direction: column;
           border-radius: 5px;
