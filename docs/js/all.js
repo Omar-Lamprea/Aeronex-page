@@ -42,221 +42,226 @@ const alliesList = [
   },
 ]
 const alliesContainer = document.getElementById('container-allies')
-alliesContainer.innerHTML = alliesList.map(allie =>{
-  let allieTemplate = `
-    <a href="${allie.link}" target="_blank" rel="noopener noreferrer">
-    <img src="${allie.img}" alt="">
-    </a>`
-  return allieTemplate
-}).join("")
+if(alliesContainer){
+  alliesContainer.innerHTML = alliesList.map(allie =>{
+    let allieTemplate = `
+      <a href="${allie.link}" target="_blank" rel="noopener noreferrer">
+      <img src="${allie.img}" alt="">
+      </a>`
+    return allieTemplate
+  }).join("")
+}
 const boxContainer = document.getElementById('box-container')
-let boxes = [...boxContainer.children] 
-
-boxes.forEach(node => {
-  node.addEventListener('click', boxData)
-});
-
-function boxData (e){
-  clearBoxes()
-  activeTarget(e.composedPath())
-}
-
-const clearBoxes = () =>{
-  boxes.forEach(box => {
-    box.classList.remove('box-active')
+if (boxContainer) {
+  let boxes = [...boxContainer.children] 
+  
+  boxes.forEach(node => {
+    node.addEventListener('click', boxData)
   });
-}
-
-const activeTarget = (target) =>{
-  target.forEach(li => {
-    if(li.nodeName === "LI"){
-      li.classList.add('box-active')
-      const liData = li.children[1].children[0].dataset.text
-
-      switch (liData) {
-        case "cargo":
-          showDataService(cargoData)
-          break;
-
-        case "no-cargo":
-          showDataService(noCargoData)
-          break;
-
-        case "list-airports":
-          showDataService(airportsList)
-          break;
-
-        case "jetBlue":
-          showDataService(jetBlueData)
-          break;
+  
+  function boxData (e){
+    clearBoxes()
+    activeTarget(e.composedPath())
+  }
+  
+  const clearBoxes = () =>{
+    boxes.forEach(box => {
+      box.classList.remove('box-active')
+    });
+  }
+  
+  const activeTarget = (target) =>{
+    target.forEach(li => {
+      if(li.nodeName === "LI"){
+        li.classList.add('box-active')
+        const liData = li.children[1].children[0].dataset.text
+  
+        switch (liData) {
+          case "cargo":
+            showDataService(cargoData)
+            break;
+  
+          case "no-cargo":
+            showDataService(noCargoData)
+            break;
+  
+          case "list-airports":
+            showDataService(airportsList)
+            break;
+  
+          case "jetBlue":
+            showDataService(jetBlueData)
+            break;
+        }
+  
+        
       }
-
-      
-    }
-  });
-}
-const showDataService = (dataBox) =>{
-  const box = document.getElementById('box-cargo-data')
-  box.innerHTML = dataBox
+    });
+  }
+  const showDataService = (dataBox) =>{
+    const box = document.getElementById('box-cargo-data')
+    box.innerHTML = dataBox
+  }
 }
 const nodo = document.getElementById('carouser-handler')
-
-const tbnHandlerDesk = 6
-const tbnHandlerMobile = 17
-
-const dataDesktop = [
-  [
-    {
-      name: 'Patricio Sepúlveda',
-      cargo: 'Co-founder & CEO',
-      photo: './img/team1.png',
-      desc: 'Profesional en economía y ________, cuenta con más de 47 años de experiencia en diferentes cargos directivos en el sector aéreo y aeronáutico y es nuestro fundador y CEO.',
-    },
-    {
-      name: 'Camila Restrepo',
-      cargo: 'Admin & Financial Controller',
-      photo: './img/team3.png',
-      desc: 'Profesional en comunicación y relaciones públicas, con más de 16 años de experiencia en el sector gremial aeronáutico y aéreo.',
-    },
-    {
-      name: 'Christian Rendel',
-      cargo: 'Planning Director',
-      photo: './img/team2.jpg',
-      desc: 'Ingeniero Industrial y mecánico, con más de 11 años de experiencia en general y 3 años de experiencia en el manejo y desarrollo de plataformas tecnológicas para el sector aéreo.',
-    },
-  ],
-  [
-    {
-      name: 'Roberto Ilanes',
-      cargo: 'Head of Operation',
-      photo: './img/team5.png',
-      desc: 'Profesional con más de 40 años de experiencia en operaciones en el sector aéreo.',
-    },
-    {
-      name: 'Frank Jerez',
-      cargo: 'OCC Manager',
-      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png",
-      desc: 'Profesional con más de 25 años de experiencia en el sector aéreo en diferentes roles. ',
-    },
-    {
-      name: 'Ignacio Gómez',
-      cargo: 'Contract & Compliance Manager',
-      photo: './img/team4.png',
-      desc: 'Ingeniero en telecomunicaciones, con maestría en comunidades europeas, con más de 25 años de experiencia en temas administrativos, contractuales y operativos en el sector aéreo.',
-    },
-  ],
-  [
-    {
-      name: 'Angela María Angarita',
-      cargo: 'Business Analyst',
-      photo: './img/team7.png',
-      desc: 'Ingeniera Industrial, con 4 años de experiencia en general y 1 año de experiencia en el sector de transporte aéreo de carga.',
-    },
-    {
-      name: 'Luisa Flórez G',
-      cargo: 'Quality Manager',
-      photo: './img/team6.png',
-      desc: 'Abogado comercial y corporativo, con más de 15 años de experiencia en el sector aéreo y 2 años de experiencia como Project manager e implementación de sistemas de gestión de calidad.',
-    },
-    {
-      name: 'Inalvis Santana',
-      cargo: 'Accountant',
-      photo: './img/team9.png',
-      desc: 'Economista, con más de 13 años de experiencia en temas contables, financieros e impuestos en el sector servicios.',
-    },
-  ],
-  [
-    {
-      name: 'Mohamed Abdelaziz',
-      cargo: 'Finance Manager Reconciliations',
-      photo: './img/team8.png',
-      desc: 'Profesional en contabilidad con más de 11 años de experiencia en temas financieros en el sector aéreo y gremial aeronáutico. ',
-    },
-    {
-      name: 'Carla Schoo Lastra',
-      cargo: 'Revenue & Commercial Manager',
-      photo: './img/team12.jpg',
-      desc: 'Profesional en ingeniera comercial con 7 años de experiencia laboral en Ventas, Marketing y Control de Gestión y 1 año de experiencia en el sector aéreo.',
-    },
-    {
-      name: 'Paola García',
-      cargo: 'Accounting Assistant',
-      photo: './img/team10.png',
-      desc: 'Técnico en contabilidad, con 8 años de experiencia en diferentes roles y sectores de la economía. ',
-    },
-  ],
-  [
-    {
-      name: 'Thais Bordarampe',
-      cargo: 'Claim Analyst',
-      photo: './img/team11.png',
-      desc: 'Profesional en relaciones públicas, con experiencia de 7 años en el sector servicios. ',
-    },
-    {
-      name: 'Soledad Espinosa',
-      cargo: 'Operations Controller',
-      photo: './img/team13.png',
-      desc: 'Profesional en Sicología, con más de 20 años de experiencia en el sector servicios y aéreo.',
-    },
-    {
-      name: 'Leonardo Chifelle',
-      cargo: 'Operations Controller',
-      photo: './img/team14.png',
-      desc: 'Profesional en diseño gráfico y administración, con más de 23 años de experiencia en diferentes roles en el sector aéreo. ',
-    },
-  ],
-  [
-    {
-      name: 'Vicente Lobos',
-      cargo: 'Operations Controller',
-      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png",
-      desc: 'Profesional con 30 años de experiencia en el sector aéreo en diferentes roles.',
-    },
-    {
-      name: 'Juan Carlos Rodríguez',
-      cargo: 'Operations Controller',
-      photo: './img/team15.png',
-      desc: 'Profesional en administración de empresas, cuenta con más de 25 años de experiencia en  la industria aérea desempeñando diferentes roles tales como manejo en rampa, servicio a pasajeros, manejo de carga.  ',
-    },
-  ],
+if(nodo){
+  const tbnHandlerDesk = 6
+  const tbnHandlerMobile = 17
   
-]
-
-
-dataDesktop.forEach((list, i )=> {
-  const container = 
-    `<div class="carousel-item">
-      <div class="d-lg-flex" id=item-${i}>
-
-      </div>
-    </div>`
-  
-  nodo.innerHTML += container
-  i == 0 ? nodo.firstElementChild.classList.add('active') : false
-
-  list.forEach(user => {
-    const userNodo = document.getElementById(`item-${i}`)
+  const dataDesktop = [
+    [
+      {
+        name: 'Patricio Sepúlveda',
+        cargo: 'Co-founder & CEO',
+        photo: './img/team1.png',
+        desc: 'Profesional en economía y ________, cuenta con más de 47 años de experiencia en diferentes cargos directivos en el sector aéreo y aeronáutico y es nuestro fundador y CEO.',
+      },
+      {
+        name: 'Camila Restrepo',
+        cargo: 'Admin & Financial Controller',
+        photo: './img/team3.png',
+        desc: 'Profesional en comunicación y relaciones públicas, con más de 16 años de experiencia en el sector gremial aeronáutico y aéreo.',
+      },
+      {
+        name: 'Christian Rendel',
+        cargo: 'Planning Director',
+        photo: './img/team2.jpg',
+        desc: 'Ingeniero Industrial y mecánico, con más de 11 años de experiencia en general y 3 años de experiencia en el manejo y desarrollo de plataformas tecnológicas para el sector aéreo.',
+      },
+    ],
+    [
+      {
+        name: 'Roberto Ilanes',
+        cargo: 'Head of Operation',
+        photo: './img/team5.png',
+        desc: 'Profesional con más de 40 años de experiencia en operaciones en el sector aéreo.',
+      },
+      {
+        name: 'Frank Jerez',
+        cargo: 'OCC Manager',
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png",
+        desc: 'Profesional con más de 25 años de experiencia en el sector aéreo en diferentes roles. ',
+      },
+      {
+        name: 'Ignacio Gómez',
+        cargo: 'Contract & Compliance Manager',
+        photo: './img/team4.png',
+        desc: 'Ingeniero en telecomunicaciones, con maestría en comunidades europeas, con más de 25 años de experiencia en temas administrativos, contractuales y operativos en el sector aéreo.',
+      },
+    ],
+    [
+      {
+        name: 'Angela María Angarita',
+        cargo: 'Business Analyst',
+        photo: './img/team7.png',
+        desc: 'Ingeniera Industrial, con 4 años de experiencia en general y 1 año de experiencia en el sector de transporte aéreo de carga.',
+      },
+      {
+        name: 'Luisa Flórez G',
+        cargo: 'Quality Manager',
+        photo: './img/team6.png',
+        desc: 'Abogado comercial y corporativo, con más de 15 años de experiencia en el sector aéreo y 2 años de experiencia como Project manager e implementación de sistemas de gestión de calidad.',
+      },
+      {
+        name: 'Inalvis Santana',
+        cargo: 'Accountant',
+        photo: './img/team9.png',
+        desc: 'Economista, con más de 13 años de experiencia en temas contables, financieros e impuestos en el sector servicios.',
+      },
+    ],
+    [
+      {
+        name: 'Mohamed Abdelaziz',
+        cargo: 'Finance Manager Reconciliations',
+        photo: './img/team8.png',
+        desc: 'Profesional en contabilidad con más de 11 años de experiencia en temas financieros en el sector aéreo y gremial aeronáutico. ',
+      },
+      {
+        name: 'Carla Schoo Lastra',
+        cargo: 'Revenue & Commercial Manager',
+        photo: './img/team12.jpg',
+        desc: 'Profesional en ingeniera comercial con 7 años de experiencia laboral en Ventas, Marketing y Control de Gestión y 1 año de experiencia en el sector aéreo.',
+      },
+      {
+        name: 'Paola García',
+        cargo: 'Accounting Assistant',
+        photo: './img/team10.png',
+        desc: 'Técnico en contabilidad, con 8 años de experiencia en diferentes roles y sectores de la economía. ',
+      },
+    ],
+    [
+      {
+        name: 'Thais Bordarampe',
+        cargo: 'Claim Analyst',
+        photo: './img/team11.png',
+        desc: 'Profesional en relaciones públicas, con experiencia de 7 años en el sector servicios. ',
+      },
+      {
+        name: 'Soledad Espinosa',
+        cargo: 'Operations Controller',
+        photo: './img/team13.png',
+        desc: 'Profesional en Sicología, con más de 20 años de experiencia en el sector servicios y aéreo.',
+      },
+      {
+        name: 'Leonardo Chifelle',
+        cargo: 'Operations Controller',
+        photo: './img/team14.png',
+        desc: 'Profesional en diseño gráfico y administración, con más de 23 años de experiencia en diferentes roles en el sector aéreo. ',
+      },
+    ],
+    [
+      {
+        name: 'Vicente Lobos',
+        cargo: 'Operations Controller',
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png",
+        desc: 'Profesional con 30 años de experiencia en el sector aéreo en diferentes roles.',
+      },
+      {
+        name: 'Juan Carlos Rodríguez',
+        cargo: 'Operations Controller',
+        photo: './img/team15.png',
+        desc: 'Profesional en administración de empresas, cuenta con más de 25 años de experiencia en  la industria aérea desempeñando diferentes roles tales como manejo en rampa, servicio a pasajeros, manejo de carga.  ',
+      },
+    ],
     
-    const userContainer = 
-      `<div class="employee">
-        <div class="hexagon-container">
-          <div class="hexagon">
-            <i class="bi bi-hexagon-fill">
-              <div class="hexagon-content">
-                <img src="${user.photo}" alt="img">
-              </div>
-            </i>
-          </div>
-        </div>
-        <div class="data-employee text-center">
-          <p class="employee-name">${user.name}</p>
-          <p class="employment-name">${user.cargo}</p>
-          <p class="employee-description">${user.desc}</p>
+  ]
+  
+  
+  dataDesktop.forEach((list, i )=> {
+    const container = 
+      `<div class="carousel-item">
+        <div class="d-lg-flex" id=item-${i}>
+  
         </div>
       </div>`
-      user.name ? userNodo.innerHTML += userContainer : false
+    
+    nodo.innerHTML += container
+    i == 0 ? nodo.firstElementChild.classList.add('active') : false
+  
+    list.forEach(user => {
+      const userNodo = document.getElementById(`item-${i}`)
+      
+      const userContainer = 
+        `<div class="employee">
+          <div class="hexagon-container">
+            <div class="hexagon">
+              <i class="bi bi-hexagon-fill">
+                <div class="hexagon-content">
+                  <img src="${user.photo}" alt="img">
+                </div>
+              </i>
+            </div>
+          </div>
+          <div class="data-employee text-center">
+            <p class="employee-name">${user.name}</p>
+            <p class="employment-name">${user.cargo}</p>
+            <p class="employee-description">${user.desc}</p>
+          </div>
+        </div>`
+        user.name ? userNodo.innerHTML += userContainer : false
+    });
   });
-});
+}
 const animationHero = (time, time2, data, key) =>{
   const query = 992
   window.innerWidth < query ? time = time2 : false
@@ -286,6 +291,94 @@ document.addEventListener("DOMContentLoaded", () =>{
 })
 
 
+const cardList = [
+  {
+    id: "card-1",
+    class: "card-question open",
+    title: "How GSA Force/Aeronex is related to JetBlue?",
+    response: "Aeronex is the exclusive representative of JetBlue cargo, and GSA Force does the sales and billing for Aeronex."
+  },
+  {
+    id: "card-2",
+    class: "card-question",
+    title: "What is the cut of time for the JetBlue flights?",
+    response: "4 hours cut off time for all flights."
+  },
+  {
+    id: "card-3",
+    class: "card-question",
+    title: "Max dims?",
+    response: "57x68x46 inches."
+  },
+  {
+    id: "card-4",
+    class: "card-question",
+    title: "Max weight per piece?",
+    response: "100 lbs max for seafood and 150 pounds for general cargo"
+  },
+  {
+    id: "card-5",
+    class: "card-question",
+    title: "Max weight per flights?",
+    response: "2,000 lbs per flight"
+  },
+  {
+    id: "card-6",
+    class: "card-question",
+    title: "Does JetBlue cargo accept ULDs?",
+    response: "No ULDs, only loose cargo"
+  },
+  {
+    id: "card-7",
+    class: "card-question",
+    title: "Do you accept DGs?",
+    response: "No, we don’t accept any kind of DG or UN"
+  },
+]
+const cardListServices = [
+  {
+    id: "card-1",
+    class: "card-question open",
+    title: "Ventaja 1",
+    response: "Plataforma llave en mano que ofrece una solución integral de carga gestionada y socios proveedores de servicios líderes en la industria."
+  },
+  {
+    id: "card-2",
+    class: "card-question",
+    title: "Ventaja 2",
+    response: "4 hours cut off time for all flights."
+  },
+  {
+    id: "card-3",
+    class: "card-question",
+    title: "Ventaja 3",
+    response: "57x68x46 inches."
+  },
+  {
+    id: "card-4",
+    class: "card-question",
+    title: "Ventaja 4",
+    response: "100 lbs max for seafood and 150 pounds for general cargo"
+  },
+  {
+    id: "card-5",
+    class: "card-question",
+    title: "Ventaja 5",
+    response: "2,000 lbs per flight"
+  },
+  {
+    id: "card-6",
+    class: "card-question",
+    title: "Ventaja 6",
+    response: "No ULDs, only loose cargo"
+  },
+  {
+    id: "card-7",
+    class: "card-question",
+    title: "Ventaja 7",
+    response: "No, we don’t accept any kind of DG or UN"
+  },
+]
 const ulNode = document.querySelectorAll('a[data-nav]')
 
 
@@ -399,68 +492,32 @@ const jetBlueData =
     <li>Máximo valor declarado por guía aérea: USD$15,000.00</li>
   </ul>`
 const containerQuestions = document.getElementById('cards-question-container')
+const containerQuestionsServices = document.getElementById('cards-services-question-container')
 
-const cardList = [
-  {
-    id: "card-1",
-    class: "card-question open",
-    title: "How GSA Force/Aeronex is related to JetBlue?",
-    response: "Aeronex is the exclusive representative of JetBlue cargo, and GSA Force does the sales and billing for Aeronex."
-  },
-  {
-    id: "card-2",
-    class: "card-question",
-    title: "What is the cut of time for the JetBlue flights?",
-    response: "4 hours cut off time for all flights."
-  },
-  {
-    id: "card-3",
-    class: "card-question",
-    title: "Max dims?",
-    response: "57x68x46 inches."
-  },
-  {
-    id: "card-4",
-    class: "card-question",
-    title: "Max weight per piece?",
-    response: "100 lbs max for seafood and 150 pounds for general cargo"
-  },
-  {
-    id: "card-5",
-    class: "card-question",
-    title: "Max weight per flights?",
-    response: "2,000 lbs per flight"
-  },
-  {
-    id: "card-6",
-    class: "card-question",
-    title: "Does JetBlue cargo accept ULDs?",
-    response: "No ULDs, only loose cargo"
-  },
-  {
-    id: "card-7",
-    class: "card-question",
-    title: "Do you accept DGs?",
-    response: "No, we don’t accept any kind of DG or UN"
-  },
-]
+function createDataCard(container, data){
+  container.innerHTML = data.map(card =>{
+    let cardTemplate = `
+      <div class="${card.class}" id="${card.id}">
+        <div class="header-card d-flex">
+          <p class="question-title p-3">${card.title}</p>
+          <button onclick="toggleResquest('${card.id}')">
+            <i id="icon-airplane-${card.id}" class="bi bi-airplane-engines"></i>
+          </button>
+        </div>
+        <div class="body-card">
+          <p class="p-3">${card.response}</p>
+        </div>
+      </div>`
+    return cardTemplate
+  }).join("")
+}
 
-containerQuestions.innerHTML = cardList.map(card =>{
-  let cardTemplate = `
-    <div class="${card.class}" id="${card.id}">
-      <div class="header-card d-flex">
-        <p class="question-title p-3">${card.title}</p>
-        <button onclick="toggleResquest('${card.id}')">
-          <i class="bi bi-airplane-engines rotateIcon1"></i>
-        </button>
-      </div>
-      <div class="body-card">
-        <p class="p-3">${card.response}</p>
-      </div>
-    </div>`
-  return cardTemplate
-}).join("")
+containerQuestions && createDataCard(containerQuestions, cardList)
+containerQuestionsServices && createDataCard(containerQuestionsServices, cardListServices)
 
+
+const icon = document.getElementById('icon-airplane-card-1')
+icon.classList.add('rotateIcon1')
 const toggleResquest = (e) =>{
   // const p = nodo.children[1].children[0]
   const nodo = document.getElementById(e)

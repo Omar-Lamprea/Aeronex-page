@@ -33,10 +33,12 @@ const alliesList = [
   },
 ]
 const alliesContainer = document.getElementById('container-allies')
-alliesContainer.innerHTML = alliesList.map(allie =>{
-  let allieTemplate = `
-    <a href="${allie.link}" target="_blank" rel="noopener noreferrer">
-    <img src="${allie.img}" alt="">
-    </a>`
-  return allieTemplate
-}).join("")
+if(alliesContainer){
+  alliesContainer.innerHTML = alliesList.map(allie =>{
+    let allieTemplate = `
+      <a href="${allie.link}" target="_blank" rel="noopener noreferrer">
+      <img src="${allie.img}" alt="">
+      </a>`
+    return allieTemplate
+  }).join("")
+}
