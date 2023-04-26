@@ -50,24 +50,26 @@
         transition: all .25s ease-in-out;
         cursor: pointer;
         justify-content: center;
-        .hexagon-container{
-          position: relative;
-          .hexagon{
-            // rotate: 90deg;
-            font-size: 80px;
-            // color: #D42B24;
-            color: #D42B24a6;;
-          }
-          .hexagon-content{
-            font-size: 50px;
-            position: absolute;
-            top: calc(50% - 40px);
-            left: 20%;
-            color: #fff;
-            rotate: -90deg;
-          }
-        }
-  
+        // .hexagon-container{
+        //   position: relative;
+        //   .hexagon{
+        //     // rotate: 90deg;
+        //     font-size: 80px;
+        //     // color: #D42B24;
+        //     color: #D42B24a6;;
+        //   }
+        //   .hexagon-content{
+        //     font-size: 50px;
+        //     position: absolute;
+        //     top: calc(50% - 40px);
+        //     left: 20%;
+        //     color: #fff;
+        //     rotate: -90deg;
+        //   }
+        // }
+        // i::before{
+        //   rotate: 90deg;
+        // }
         .cargo-data{
           margin: 1rem 0;
           // padding-left: 1rem;
@@ -83,9 +85,7 @@
             color: #8e8e8e;;
           }
         }
-        i::before{
-          rotate: 90deg;
-        }
+       
         
       }
       li:hover{
@@ -172,7 +172,7 @@
           }
           }
           i::before{
-            rotate: 90deg;
+            // rotate: 90deg;
           }
           .cargo-data{
             // padding: 0;

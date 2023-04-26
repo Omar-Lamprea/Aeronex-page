@@ -30,6 +30,8 @@
       color: gray;
       rotate: 90deg;
       .hexagon{
+        font-size: inherit;
+        color: inherit;
         i{
             position: relative;
         }
