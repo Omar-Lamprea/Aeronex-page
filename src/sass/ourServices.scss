@@ -1,5 +1,12 @@
 .our-services{
 
+  .title{
+    color: #2843a0;
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: 28px;
+  }
+
   .hexagon-container{
     .hexagon{
       color: #d42a24;;
@@ -21,6 +28,7 @@
       background-color: #2843a091;
       .title{
         font-weight: 600;
+        color: #fff;
       }
     }
   }
@@ -34,11 +42,11 @@
   .business-model{
     margin-bottom: 1rem;
     
-    .title{
-      color: #2843a0;
-      font-weight: 600;
-      margin-left: 2rem;
-    }
+    // .title{
+    //   color: #2843a0;
+    //   font-weight: 600;
+    //   margin-left: 2rem;
+    // }
     .container-model{
       .map{
         width: fit-content;
@@ -52,12 +60,16 @@
 
   .advantages-model{
     .title{
-      color: #2843a0;
       text-align: center;
+      margin: 0;
       height: 120px;
       display: flex;
       justify-content: center;
-      align-items: end;
+      align-items: center;
+      h2{
+        font-weight: bold;
+        font-size: 21px;
+      }
     }
   }
 
@@ -71,11 +83,11 @@
         }
       }
     }
-    .title{
-      color: #2843a0;
-      font-weight: 600;
-      margin-left: 2rem;
-    }
+    // .title{
+    //   color: #2843a0;
+    //   font-weight: 600;
+    //   margin-left: 2rem;
+    // }
     .air-cargo-text{
       max-width: 700px;
       margin: auto;
@@ -107,5 +119,62 @@
         }
       }
     }
+  }
+
+  .container-tech{
+    padding: 4rem 2rem;
+    // .title{
+    //   color: #2843a0;
+    //   font-weight: 600;
+    //   margin-left: 2rem;
+    // }
+    .tech-list{
+      list-style: none;
+      padding-left: 1.8rem;
+      i{
+        font-size: 22px;
+        color: #2843a0;
+        font-weight: 700;
+      }
+    }
+    .tech-img{
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:992px){
+  .our-services{
+    .services-text{
+      line-height: 24px;
+    }
+    .title{
+      margin-left: .5rem;
+      font-size: 24px;
+      // text-align: center;
+    }
+    .advantages-model{
+      .title{
+        height: auto;
+        margin-top: 1rem;
+        h2{
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+    .container-tech{
+      padding: 2rem 1rem;
+      .tech-list{
+        padding: 0;
+        li{
+          margin-bottom: .5rem;
+        }
+      }
+    }
+
   }
 }
