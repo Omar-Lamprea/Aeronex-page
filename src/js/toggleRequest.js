@@ -22,12 +22,26 @@ function createDataCard(container, data){
 containerQuestions && createDataCard(containerQuestions, cardList)
 containerQuestionsServices && createDataCard(containerQuestionsServices, cardListServices)
 
-
 const icon = document.getElementById('icon-airplane-card-1')
 icon.classList.add('rotateIcon1')
+
 const toggleResquest = (e) =>{
-  // const p = nodo.children[1].children[0]
+  const cards = containerQuestions 
+    ? containerQuestions.children
+    : containerQuestionsServices.children
+
   const nodo = document.getElementById(e)
+  Array.from(cards).forEach(c => {
+    if(c.classList.contains('open')){
+      if(c.id !== e){
+        const icon = c.children[0].children[1].children[0]
+        c.classList.remove('open')
+        icon.classList.remove('rotateIcon1')
+        icon.classList.add('rotateIcon2')
+      }
+    }
+  });
+
   const icon = nodo.children[0].children[1].children[0]
 
   if(nodo.classList.contains('open')){

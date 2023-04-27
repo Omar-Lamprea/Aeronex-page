@@ -346,37 +346,37 @@ const cardListServices = [
     id: "card-2",
     class: "card-question",
     title: "Ventaja 2",
-    response: "4 hours cut off time for all flights."
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."
   },
   {
     id: "card-3",
     class: "card-question",
     title: "Ventaja 3",
-    response: "57x68x46 inches."
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."
   },
   {
     id: "card-4",
     class: "card-question",
     title: "Ventaja 4",
-    response: "100 lbs max for seafood and 150 pounds for general cargo"
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."  
   },
   {
     id: "card-5",
     class: "card-question",
     title: "Ventaja 5",
-    response: "2,000 lbs per flight"
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."  
   },
   {
     id: "card-6",
     class: "card-question",
     title: "Ventaja 6",
-    response: "No ULDs, only loose cargo"
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."  
   },
   {
     id: "card-7",
     class: "card-question",
     title: "Ventaja 7",
-    response: "No, we don’t accept any kind of DG or UN"
+    response: "Lorem, ipsum dolor sit elit. Doloremque, architecto iusto neque. Soluta unde."  
   },
 ]
 const ulNode = document.querySelectorAll('a[data-nav]')
@@ -394,6 +394,9 @@ function scrollLocation(id){
     let addOffset = id === "airports" ? 180 : 130
     window.location.hash = id
     scroll(0, location.offsetTop - addOffset)
+  }else{
+    if(id !== 'services') 
+      window.location.href = `${window.location.origin}#${id}`
   }
 }
 const cargoData = 
@@ -515,12 +518,26 @@ function createDataCard(container, data){
 containerQuestions && createDataCard(containerQuestions, cardList)
 containerQuestionsServices && createDataCard(containerQuestionsServices, cardListServices)
 
-
 const icon = document.getElementById('icon-airplane-card-1')
 icon.classList.add('rotateIcon1')
+
 const toggleResquest = (e) =>{
-  // const p = nodo.children[1].children[0]
+  const cards = containerQuestions 
+    ? containerQuestions.children
+    : containerQuestionsServices.children
+
   const nodo = document.getElementById(e)
+  Array.from(cards).forEach(c => {
+    if(c.classList.contains('open')){
+      if(c.id !== e){
+        const icon = c.children[0].children[1].children[0]
+        c.classList.remove('open')
+        icon.classList.remove('rotateIcon1')
+        icon.classList.add('rotateIcon2')
+      }
+    }
+  });
+
   const icon = nodo.children[0].children[1].children[0]
 
   if(nodo.classList.contains('open')){

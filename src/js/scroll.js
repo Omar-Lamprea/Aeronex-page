@@ -13,5 +13,8 @@ function scrollLocation(id){
     let addOffset = id === "airports" ? 180 : 130
     window.location.hash = id
     scroll(0, location.offsetTop - addOffset)
+  }else{
+    if(id !== 'services') 
+      window.location.href = `${window.location.origin}#${id}`
   }
 }
