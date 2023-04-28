@@ -114,8 +114,13 @@
           }
         }
       }
-      .container-maps img{
-        width: 50%;
+      .container-maps{
+        .map{
+          width: 50%;
+          img{
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -183,6 +188,14 @@
       .container-cargo-cards{
         .container-maps img{
           width: 100%;
+        }
+        .container-maps{
+          .map{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
         }
       }
     }
