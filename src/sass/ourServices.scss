@@ -117,6 +117,10 @@
       .container-maps{
         .map{
           width: 50%;
+          .ul-list{
+            max-height: 200px;
+            overflow: auto;
+          }
           img{
             width: 100%;
           }
