@@ -1,5 +1,7 @@
 .our-services{
-
+  p{
+    line-height: 22px;
+  }
   .title{
     color: #2843a0;
     font-weight: 600;
@@ -48,6 +50,9 @@
     //   margin-left: 2rem;
     // }
     .container-model{
+      ul li::marker{
+        font-weight: 700;
+      }
       .map{
         width: fit-content;
         img{

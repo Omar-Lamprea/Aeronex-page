@@ -2,8 +2,8 @@ const cardList = [
   {
     id: "card-1",
     class: "card-question open",
-    title: "How GSA Force/Aeronex is related to JetBlue?",
-    response: "Aeronex is the exclusive representative of JetBlue cargo, and GSA Force does the sales and billing for Aeronex."
+    title: "What is a relationship between GSA Force/Aeronex Cargo and JetBlue?",
+    response: "Aeronex Cargo has the exclusive representation of JetBlue cargo, and GSA Force is the sales agent for Aeronex Cargo in this partnership."
   },
   {
     id: "card-2",
@@ -27,7 +27,7 @@ const cardList = [
     id: "card-5",
     class: "card-question",
     title: "Max weight per flights?",
-    response: "2,000 lbs per flight"
+    response: "2,000 lbs per flight depending of the route, could be more."
   },
   {
     id: "card-6",
@@ -38,7 +38,7 @@ const cardList = [
   {
     id: "card-7",
     class: "card-question",
-    title: "Do you accept DGs?",
-    response: "No, we don’t accept any kind of DG or UN"
+    title: "Does JetBlue accept DG?",
+    response: "No, JetBlue doesn’t accept any kind of DG or UN"
   },
 ]

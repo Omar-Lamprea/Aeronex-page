@@ -7,5 +7,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     $('.dropdown-toggle').dropdown('hide')
   })
 
+  const copyDate = document.getElementById('copyDate ')
+  const year = new Date().getFullYear()
+  if(copyDate) copyDate.children[0].innerHTML = year
+
 })
 
