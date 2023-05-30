@@ -28,7 +28,8 @@
                     aria-expanded="false" aria-label="Toggle navigation"> <i class="bi bi-list"></i>
 
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="mobile-menu collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
                         <ul class="navbar-nav text-center">
                             <li class="nav-item"> <a data-nav="home" class="nav-link active" aria-current="page" href="/">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -72,22 +73,22 @@
                 </a>
 
                             </li>
-                            <div class="dropdown nav-item" id=""> <a class="nav-link dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                  Noticias de Aviación
+                            <li class="nav-item"> <a data-nav="AviationNews" class="nav-link">
+                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    Noticias de Aviación
+                  </span>
                 </a>
 
-                                <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank"
-                                        rel=”noopener noreferrer”>Flylinkers news</a>
-
-                                    </li>
-                                    <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank"
-                                        rel=”noopener noreferrer”>Aeronex LLC</a>
-
-                                    </li>
-                                </ul>
-                            </div>
+                            </li>
+                            <!-- <div class="dropdown nav-item" id="">
+                <a class="nav-link dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Noticias de Aviación
+                </a>
+                <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
+                  <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
+                </ul>
+              </div> -->
                             <li class="nav-item"> <a data-nav="contact" class="nav-link">
                   <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     Contáctenos
@@ -161,22 +162,18 @@
                         <li> <a data-nav="OurTeam">Nuestro Equipo</a>
 
                         </li>
-                        <div class="dropdown" id="drop-main"> <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <li> <a data-nav="AviationNews">Noticias de Aviación</a>
+
+                        </li>
+                        <!-- <div class="dropdown" id="drop-main">
+              <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Noticias de Aviación
               </a>
-
-                            <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank"
-                                    rel=”noopener noreferrer”>Flylinkers news</a>
-
-                                </li>
-                                <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank"
-                                    rel=”noopener noreferrer”>Aeronex LLC</a>
-
-                                </li>
-                            </ul>
-                        </div>
+              <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
+                <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
+              </ul>
+            </div> -->
                         <li> <a data-nav="contact">Contáctenos</a>
 
                         </li>
@@ -357,18 +354,45 @@
                     </div>
                 </div>
                 </div>
-                <section class="allies">
-                    <div class="maxWidth">
-                         <h3>NUESTROS ALIADOS ESTRATÉGICOS</h3>
+            </section>
+            <section id="AviationNews">
+                <section class="aviation-news">
+                    <div class="maxWidth container-news">
+                         <h3 class="mt-5">Noticias de aviación</h3>
 
-                        <p>Contamos con alianzas estratégicas con empresas que cuentan con vasta
-                            experiencia tales como: <strong>GSA Force, Aeronex LLC, IBS
-        Software</strong> y reconocidas empresas de asistencia en tierra
-                            en cada una de las estaciones donde operamos.</p>
-                        <div class="container-allies"
-                        id="container-allies"></div>
+                        <p class="border-small"></p>
+                        <p class="text-news">Contamos con una publicación digital diaria de las principales y más relevantes
+                            noticias de aviación.</p>
+                        <ul class="ul-news-links">
+                            <li> <a class="" href="https://news.flylinkers.com/" target="_blank" rel=”noopener
+                                noreferrer”>
+          Flylinkers news
+          <img src="./img/Flylinkers-news.png" alt="">
+        </a>
+
+                            </li>
+                            <li> <a class="" href="https://aeronexllc.com" target="_blank" rel=”noopener
+                                noreferrer”>
+          Aeronex LLC
+          <img src="./img/Aeronex-LLC.png" alt="">
+        </a>
+
+                            </li>
+                        </ul>
                     </div>
                 </section>
+            </section>
+            <section class="allies">
+                <div class="maxWidth">
+                     <h3>NUESTROS ALIADOS ESTRATÉGICOS</h3>
+
+                    <p>Contamos con alianzas estratégicas con empresas que cuentan con vasta
+                        experiencia tales como: <strong>GSA Force, Aeronex LLC, IBS
+        Software</strong> y reconocidas empresas de asistencia en tierra
+                        en cada una de las estaciones donde operamos.</p>
+                    <div class="container-allies"
+                    id="container-allies"></div>
+                </div>
             </section>
             <section id="about">
                 <section class="about maxWidth">
@@ -432,8 +456,44 @@
                             </p>
                         </div>
                         <div class="history-graphic col-12 col-lg-3">
-                            <img class="d-lg-none" src="./img/graphic-mobile.png" alt="">
-                            <img class="d-none d-lg-block" src="./img/graphic-desk.png" alt="">
+                            <!-- <img class="d-lg-none" src="./img/graphic-mobile.png" alt="">
+      <img class="d-none d-lg-block" src="./img/graphic-desk.png" alt=""> -->
+                            <div class="relevantData">
+                                <!-- <div class="container-1"> -->
+                                <div class="container-data">
+                                    <div class="number">
+                                        <p>268</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>Clientes</p>
+                                    </div>
+                                </div>
+                                <div class="container-data">
+                                    <div class="number">
+                                        <p>27.000</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>Número de vuelos atendidos</p>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <div class="container-data">
+                                    <div class="number">
+                                        <p>56 millones de toneladas</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>Ton/KM Transportadas</p>
+                                    </div>
+                                </div>
+                                <div class="container-data">
+                                    <div class="number">
+                                        <p>0</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>Número Incidentes (vuelos atrasados)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -448,7 +508,7 @@
       </div>
   
       <div class="links-footer ">
-        <p>Para envíos de carga por medio de JetBlue</p>
+        <!-- <p>Para envíos de carga por medio de JetBlue</p>
         <p>
           Customer Portal Tracking <br>
           <a 
@@ -456,7 +516,7 @@
             target="_blank " rel="noopener noreferrer ">
               https://icargonet.ibsplc.aero/
           </a>
-        </p>
+        </p> -->
   
         <p>
           For flight schedule, please visit <br>

@@ -23,7 +23,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <div class="mobile-menu collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a data-nav="home" class="nav-link active" aria-current="page" href="/">
@@ -68,7 +68,14 @@
                 </a>
               </li>
 
-              <div class="dropdown nav-item" id="">
+              <li class="nav-item">
+                <a data-nav="AviationNews" class="nav-link">
+                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    Noticias de Aviación
+                  </span>
+                </a>
+              </li>
+              <!-- <div class="dropdown nav-item" id="">
                 <a class="nav-link dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Noticias de Aviación
                 </a>
@@ -76,7 +83,7 @@
                   <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
                   <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
                 </ul>
-              </div>
+              </div> -->
 
               <li class="nav-item">
                 <a data-nav="contact" class="nav-link">
@@ -156,7 +163,10 @@
               <a data-nav="OurTeam">Nuestro Equipo</a>
             </li>
 
-            <div class="dropdown" id="drop-main">
+            <li>
+              <a data-nav="AviationNews">Noticias de Aviación</a>
+            </li>
+            <!-- <div class="dropdown" id="drop-main">
               <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Noticias de Aviación
               </a>
@@ -164,7 +174,7 @@
                 <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
                 <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
               </ul>
-            </div>
+            </div> -->
 
             <li>
               <a data-nav="contact">Contáctenos</a>

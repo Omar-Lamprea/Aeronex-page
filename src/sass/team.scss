@@ -12,11 +12,12 @@
       color: #8e8e8e;
       line-height: 16px;
       text-align: justify;
+      margin-bottom: 2rem;
     }
   }
   .employee{
     max-width: 300px;
-    // height: 410px;
+    height: 333px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -31,7 +32,7 @@
       rotate: 90deg;
       .hexagon{
         font-size: inherit;
-        color: inherit;
+        color: #cacaca;
         i{
             position: relative;
         }
