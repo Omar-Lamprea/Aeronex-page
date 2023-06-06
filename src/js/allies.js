@@ -1,8 +1,17 @@
+const LOGO_DJ_CARGO = "./img/allies-Logo DJ.png"
+const LOGO_AIR_GENERAL = "./img/allies-AG Logo Cargo.png"
+const LOGO_ALLIANCE = "./img/allie-alliance-logo.svg"
+
 const alliesList = [
   {
-    img: "./img/allies-Logo DJ.png",
+    img: LOGO_DJ_CARGO,
     link: "https://djcargo.com/",
-    stations: "STI - SDQ"
+    stations: "STI"
+  },
+  {
+    img: LOGO_DJ_CARGO,
+    link: "https://djcargo.com/",
+    stations: "SDQ"
   },
   {
     img: "./img/allies-LOG - WFS CMJN.png",
@@ -10,9 +19,24 @@ const alliesList = [
     stations: ""
   },
   {
-    img: "./img/allies-AG Logo Cargo.png",
+    img: LOGO_AIR_GENERAL,
     link: "https://airgeneral.com/",
-    stations: "FLL - TPA - MCO - ORD"
+    stations: "FLL"
+  },
+  {
+    img: LOGO_AIR_GENERAL,
+    link: "https://airgeneral.com/",
+    stations: "TPA"
+  },
+  {
+    img: LOGO_AIR_GENERAL,
+    link: "https://airgeneral.com/",
+    stations: "MCO"
+  },
+  {
+    img: LOGO_AIR_GENERAL,
+    link: "https://airgeneral.com/",
+    stations: "ORD"
   },
   {
     img: "./img/allies-JetBlueLogo.png",
@@ -25,9 +49,39 @@ const alliesList = [
     stations: ""
   },
   {
-    img: "./img/allie-alliance-logo.svg",
+    img: LOGO_ALLIANCE,
     link: "https://www.allianceairlines.com.au/",
-    stations: "MIA - JFK - EWR - ATL - SFO - LAX - LAS"
+    stations: "MIA"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "JFK"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "EWR"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "ATL"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "SFO"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "LAX"
+  },
+  {
+    img: LOGO_ALLIANCE,
+    link: "https://www.allianceairlines.com.au/",
+    stations: "LAS"
   },
   {
     img: "./img/allies-GMD-LOGO.png",
@@ -52,6 +106,63 @@ const alliesList = [
   },
   
 ]
+
+// const alliesList = [
+//   {
+//     img: LOGO_DJ_CARGO,
+//     link: "https://djcargo.com/",
+//     stations: "STI - SDQ"
+//   },
+//   {
+//     img: "./img/allies-LOG - WFS CMJN.png",
+//     link: "https://www.wfs.aero/",
+//     stations: ""
+//   },
+//   {
+//     img: LOGO_AIR_GENERAL,
+//     link: "https://airgeneral.com/",
+//     stations: "FLL - TPA - MCO - ORD"
+//   },
+//   {
+//     img: "./img/allies-JetBlueLogo.png",
+//     link: "https://www.jetblue.com/",
+//     stations: ""
+//   },
+//   {
+//     img: "./img/allies-LOGO_GSA_FORCE.png",
+//     link: "https://gsaforce.com/",
+//     stations: ""
+//   },
+//   {
+//     img: LOGO_ALLIANCE,
+//     link: "https://www.allianceairlines.com.au/",
+//     stations: "MIA - JFK - EWR - ATL - SFO - LAX - LAS"
+//   },
+//   {
+//     img: "./img/allies-GMD-LOGO.png",
+//     link: "https://www.gmdpr.com/",
+//     stations: ""
+//   },
+  
+//   {
+//     img: "./img/allies-ESCM LOGO.png",
+//     link: "https://www.eckertseamans.com/",
+//     stations: ""
+//   },
+//   {
+//     img: "./img/allies-IBS-Logo.png",
+//     link: "https://www.ibsplc.com/",
+//     stations: ""
+//   },
+//   {
+//     img: "./img/allies-Logo-Altitute.png",
+//     link: "https://www.tenaciousaltitude.com/",
+//     stations: ""
+//   },
+  
+// ]
+
+
 const alliesContainer = document.getElementById('container-allies')
 if(alliesContainer){
   alliesContainer.innerHTML = alliesList.map(allie =>{

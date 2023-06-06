@@ -20,88 +20,8 @@
               <img src="./img/logo_cargo.svg" alt="logo-aeronex">
             </a>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
-          </button>
-          <div class="mobile-menu collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item">
-                <a data-nav="home" class="nav-link active" aria-current="page" href="/">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Inicio
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a data-nav="about" class="nav-link">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Quienes Somos
-                  </span>
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a data-nav="airports" class="nav-link">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestros Mercados y Aeropuertos 
-                  </span>
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a data-nav="services" class="nav-link" href="../OurServices.html">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestros Servicios
-                  </span>
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a data-nav="" class="nav-link" href="#">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Instalaciones
-                  </span>
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a data-nav="OurTeam" class="nav-link">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Nuestro Equipo
-                  </span>
-                </a>
-              </li>
 
-              <li class="nav-item">
-                <a data-nav="AviationNews" class="nav-link">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Noticias de Aviación
-                  </span>
-                </a>
-              </li>
-              <!-- <div class="dropdown nav-item" id="">
-                <a class="nav-link dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Noticias de Aviación
-                </a>
-                <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
-                  <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
-                </ul>
-              </div> -->
-
-              <li class="nav-item">
-                <a data-nav="contact" class="nav-link">
-                  <span data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    Contáctenos
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🇺🇸</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link btn-bookings" href="#">Reservas</a>
-              </li> -->
-              
-            </ul>
-          </div>
+          <partial src="./components/navbar-mobile.html"></partial>
 
           <div class="contact-links d-none d-lg-flex">
             <a href="https://goo.gl/maps/dSsyDY7vYda25Adz7" target="_blank" rel="noopener noreferrer"class="d-flex align-items-center mx-3">
@@ -142,52 +62,6 @@
         </a>
       </section>
 
-      <section class="d-none d-lg-block nav-desktop py-2">
-        <nav class="maxWidth">
-          <ul class="ul-desk">
-            <li>
-              <a href="/" data-nav="home">Inicio</a>
-            </li>
-            <li>
-              <a data-nav="about">Quienes Somos</a>
-            </li>
-            <!-- <li>
-              <a data-nav="airports">Nuestros Mercados y Aeropuertos</a>
-            </li> -->
-            <li>
-              <a href="../OurServices.html" data-nav="services">Nuestros Servicios</a>
-            </li>
-            <!-- <li>
-              <a href="#" data-nav="">Instalaciones</a>
-            </li> -->
-            <li>
-              <a data-nav="OurTeam">Nuestro Equipo</a>
-            </li>
-
-            <li>
-              <a data-nav="AviationNews">Noticias de Aviación</a>
-            </li>
-            <!-- <div class="dropdown" id="drop-main">
-              <a class=" dropdown-toggle drop-a1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Noticias de Aviación
-              </a>
-              <ul style="width: 100%;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item drop-a2" href="https://news.flylinkers.com/" target="_blank" rel=”noopener noreferrer”>Flylinkers news</a></li>
-                <li><a class="dropdown-item drop-a2" href="https://aeronexllc.com" target="_blank" rel=”noopener noreferrer”>Aeronex LLC</a></li>
-              </ul>
-            </div> -->
-
-            <li>
-              <a data-nav="contact">Contáctenos</a>
-            </li>
-            <li>
-              <a href="#"><p>🇺🇸</p></a>
-            </li>
-            <!-- <li class="btn-bookings">
-              <a href="#">Reservas</a>
-            </li> -->
-          </ul>
-        </nav>
-      </section>
+      <partial src="./components/navbar-desktop.html"></partial>
 
     </header>

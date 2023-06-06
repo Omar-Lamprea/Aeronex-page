@@ -7,6 +7,7 @@
     font-weight: 600;
     margin-left: 1rem;
     font-size: 28px;
+    text-transform: uppercase;
   }
 
   .hexagon-container{
@@ -67,14 +68,11 @@
     .title{
       text-align: center;
       margin: 0;
-      height: 120px;
+      // height: 120px;
       display: flex;
       justify-content: center;
       align-items: center;
-      h2{
-        font-weight: bold;
-        font-size: 21px;
-      }
+      margin-top: 2.5rem;
     }
   }
 
@@ -120,8 +118,10 @@
         }
       }
       .container-maps{
+        max-width: 1100px;
+        margin: auto;
         .map{
-          width: 50%;
+          width: 100%;
           .ul-list{
             max-height: 200px;
             overflow: auto;
@@ -226,7 +226,7 @@
     display: block;
     width: 100%;
     height: auto;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   .loupe {
