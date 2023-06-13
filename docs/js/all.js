@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 //     image2.style.transform = 'translate(0, 0) scale(1)';
 //   });
 // }
-const cardList = [
+const cardListEn = [
   {
     id: "card-1",
     class: "card-question open",
@@ -499,6 +499,45 @@ const cardList = [
     title: "Does JetBlue accept DG?",
     response: "No, JetBlue doesn’t accept any kind of DG or UN"
   },
+]
+
+const cardList = [
+  {
+    id: "card-1",
+    class: "card-question open",
+    title: "¿Cuál es la relación comercial entre GSA Force, Aeronex Cargo y JetBlue?",
+    response: "Aeronex Cargo es el representante exclusivo de JetBlue Cargo y GSA Force el agente de ventas de Aeronex Cargo."
+  },
+  {
+    id: "card-2",
+    class: "card-question",
+    title: "¿Con cuánto tiempo de antelación (Cut off time) se entregar la carga para los vuelos de JetBlue?",
+    response: "4 horas de antelación para todos los vuelos."
+  },
+  {
+    id: "card-3",
+    class: "card-question",
+    title: "¿Cuáles son las dimensiones máximas?",
+    response: "57x68x46 pulgadas"
+  },
+  {
+    id: "card-4",
+    class: "card-question",
+    title: "¿Cuál es el peso máximo por pieza?",
+    response: "100 libras para pescados y 150 libras para carga  general"
+  },
+  {
+    id: "card-5",
+    class: "card-question",
+    title: "¿JetBlue Cargo acepta ULD´s?",
+    response: "No acepta ULD`s, solo carga suelta."
+  },
+  {
+    id: "card-6",
+    class: "card-question",
+    title: "¿JetBlue acepta DG?",
+    response: "No, JetBlue no acepta ningún tipo de DG o ONU"
+  }
 ]
 // const cardListServices = [
 //   {
