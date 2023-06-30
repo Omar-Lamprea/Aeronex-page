@@ -33,13 +33,9 @@
       .hexagon{
         font-size: inherit;
         color: #cacaca;
-        i{
-            position: relative;
-        }
+        
         .hexagon-content{
-          position: absolute;
-          rotate: -90deg;
-          top: calc(50% - 78px);
+          top: calc(50% - 75px);
           z-index: 1000;
           color: #fff;
           font-size: 100px;
